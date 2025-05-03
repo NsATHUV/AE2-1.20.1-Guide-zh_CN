@@ -3,11 +3,12 @@
 本仓库提供了适用于《我的世界》1.20.1版本的应用能源2 (Applied Energistics 2) 指南的中文汉化资源包。通过此资源包，玩家可以在游戏中以中文查看应用能源2的相关指南内容。
 
 ## 特性
-- **完全中文化**：所有指南内容均已翻译为简体中文。
+- **基于深度调校的Deepseek-R1模型汉化**：汉化内容可能有误，若有疑问请提交[Issue](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/issues/new)。
+- **完全中文化**：所有指南内容均已翻译为简体中文。(待完成，目前汉化进度已在release里描述。)
 - **资源包形式**：无需额外安装模组，只需将资源包放入游戏目录即可使用。
 
 ## 使用方法
-1. 下载本仓库中的[资源包文件.zip](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/releases)。
+1. 下载本仓库中的[资源包文件.zip](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/releases/latest)。
 2. 将资源包文件放入游戏目录下的 `resourcepacks` 文件夹中。
 3. 启动游戏并在资源包设置中启用该资源包。
 4. 进入游戏后即可查看应用能源2指南的中文内容。
