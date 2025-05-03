@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Presses
+  title: 压印模板
   icon: silicon_press
   position: 010
 categories:
@@ -14,9 +14,9 @@ item_ids:
 - ae2:name_press
 ---
 
-# Presses
+# 压印模板
 
-There are 5 different presses used in the <ItemLink id="inscriber" />.
+共有5种不同类型的压印模板可用于<ItemLink id="inscriber" />（压印器）。
 
 <Row>
   <ItemImage id="silicon_press" scale="4" />
@@ -30,11 +30,9 @@ There are 5 different presses used in the <ItemLink id="inscriber" />.
 
 <ItemImage id="name_press" scale="4" />
 
-## Processor Presses
+## 处理器压印模板
 
-The Silicon, Logic, Calculation, and Engineering presses are used in the production of [processors](processors.md).
-These 4 presses are obtained by breaking a <ItemLink id="mysterious_cube" /> in a [meteorite](../ae2-mechanics/meteorites.md).
-They can also be duplicated in an <ItemLink id="inscriber" />.
+硅、逻辑、运算和工程压印模板用于生产[处理器](processors.md)。这4种模板可通过破坏[陨石](../ae2-mechanics/meteorites.md)中的<ItemLink id="mysterious_cube" />（神秘方块）获得，也可在压印器中复制。
 
 <Column>
   <Row>
@@ -50,11 +48,12 @@ They can also be duplicated in an <ItemLink id="inscriber" />.
   </Row>
 </Column>
 
-## Name Press
+## 名称压印模板
 
-The Name Press can be used in an inscriber to name items, similar to an anvil.
+名称压印模板功能类似铁砧，可为物品命名。制作方法：
+1. 右键点击<ItemLink id="certus_quartz_cutting_knife" />或<ItemLink id="nether_quartz_cutting_knife" />
+2. 放入金属锭
+3. 输入想要刻印的名称
+4. 取出成品模板
 
-To craft, right click the <ItemLink id="certus_quartz_cutting_knife" /> or <ItemLink id="nether_quartz_cutting_knife" />
-and insert an ingot of metal, you will then have to type the name you
-wish to write onto the plate then simply extract the finished plate. You can use one or two plates at a time in the inscriber,
-if you use two plates, it will print the name using the combination of both names, top slot, then bottom slot.
+在压印器中可同时使用两个名称压印模板，上方槽位的名称将优先于下方槽位显示。

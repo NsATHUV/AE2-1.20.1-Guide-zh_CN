@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Crank
+  title: 木质曲柄
   icon: crank
   position: 310
 categories:
@@ -10,15 +10,15 @@ item_ids:
 - ae2:crank
 ---
 
-# The Crank
+# 木质曲柄
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/crank_on_stuff.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The crank is used to power machines when you don't otherwise have access to power (or an <ItemLink id="energy_acceptor" />). Early-game struggles, am I right?
+木质曲柄用于在缺乏其他能源供应（或未配置<ItemLink id="energy_acceptor" />）时手动为机器供能。适用于游戏初期能源短缺阶段。
 
-## Recipe
+## 合成配方
 
 <RecipeFor id="crank" />

@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: P2P Tunnels
+  title: P2P通道
   icon: me_p2p_tunnel
   position: 210
 categories:
@@ -15,114 +15,96 @@ item_ids:
 - ae2:light_p2p_tunnel
 ---
 
-# Point To Point Tunnels
+# 点对点通道
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/p2p_tunnels.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-P2P tunnels are a way to move things like items, fluids, redstone signals, power, light, and [channels](../ae2-mechanics/channels.md)
-around a network without them directly interacting with the network. There are many variants of P2P tunnel but each
-only transports its specific type of thing. They essentially act like portals that directly connect
-two block faces at range. They are not bi-directional, there are defined inputs and outputs.
+P2P通道能在不直接干预网络的情况下传输物品、流体、红石信号、能源、光照和[频道](../ae2-mechanics/channels.md)。每种P2P通道仅传输特定类型内容，本质上是通过网络建立远程两点间的定向传输通道。
 
-![Portal](../assets/assemblies/p2p_portal.png)
+![通道示意图](../assets/assemblies/p2p_portal.png)
 
-For example, the hopper facing the Item P2P will act as if it is directly connected to the barrel, and items will flow.
+例如，物品P2P通道连接的漏斗与木桶将建立直接传输链路：
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/p2p_hopper_barrel.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-However, two barrels next to each other will not transfer items between each other.
+但相邻的两个木桶不会通过P2P通道自动传输物品：
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/p2p_barrel_barrel.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-There are also other variants like Redstone P2P.
+红石P2P通道的典型应用场景：
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/p2p_redstone.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Types Of P2P Tunnel And Attunement
+## 通道类型与调谐
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/p2p_tunnels.snbt" />
   <IsometricCamera yaw="180" pitch="90" />
 </GameScene>
 
-There are many types of P2P tunnel. Only the ME P2P tunnel is directly craftable, the others are made by right-clicking other
-P2P tunnels with certain items:
-- ME P2P tunnels are selected by right-clicking with any [cable](../items-blocks-machines/cables.md).
-- Redstone P2P tunnels are selected by right-clicking with a variety of redstone components.
-- Item P2P tunnels are selected by right-clicking with a chest or hopper.
-- Fluid P2P tunnels are selected by right-clicking with a bucket or bottle.
-- Energy P2P tunnels are selected by right-clicking with almost any energy-containing item.
-- Light P2P tunnels are selected by right-clicking with a torch or glowstone
+不同P2P通道的调谐方式：
+- **ME通道**：使用任意[线缆](../items-blocks-machines/cables.md)右键点击
+- **红石通道**：使用红石元件调谐
+- **物品通道**：使用容器类物品（如箱子）调谐
+- **流体通道**：使用流体容器（如桶）调谐
+- **能源通道**：使用储能物品（如电池）调谐
+- **光通道**：使用光源物品（如火把）调谐
 
-Some tunnel types have quirks. For instance, ME P2P tunnels' channels cannot pass through other ME P2P tunnels, and
-Energy P2P tunnels indirectly extract a 5% tax on FE or E flowing through themselves by increasing their
-[energy](../ae2-mechanics/energy.md) draw.
+特殊机制：
+- ME通道的频道无法穿透其他ME通道
+- 能源通道会对传输的FE/E能源征收5%的损耗税
 
-## The Most-Used Form of P2P
+## 核心应用场景
 
-The most common use case of P2P tunnels is using a ME P2P tunnel to compact the density of [channel](../ae2-mechanics/channels.md) transport.
-Instead of a bundle of dense cable, a single dense cable can be used to carry many channels around.
-
-In this example, 8 ME P2P inputs take 256 channels (8*32) from the main network's <ItemLink id="controller" /> and 8 ME P2P outputs 
-output them somewhere else. Observe how each P2P tunnel input or output takes 1 channel. We can thus run many channels 
-through a thin cable. And since our P2P tunnels are on a dedicated [subnetwork](../ae2-mechanics/subnetworks.md), we're not
-even using up any channels from the main network to do this! Also observe how while the P2P tunnels can be placed directly
-against a controller, a [dense smart cable](../items-blocks-machines/cables.md#smart-cable) can be placed in between to more easily visualize the channels.
+ME通道最常用于[频道](../ae2-mechanics/channels.md)的高密度传输。通过单根致密线缆传输多组频道：
 
 <GameScene zoom="4" interactive={true}>
   <ImportStructure src="../assets/assemblies/p2p_compact_channels.snbt" />
 
   <BoxAnnotation color="#dddddd" min="1.3 1.3 6.3" max="2 2.7 6.7">
-        Quartz Fiber shares energy between main network and p2p subnetwork.
+        石英纤维实现主网与子网间的能源共享
   </BoxAnnotation>
 
   <IsometricCamera yaw="225" pitch="30" />
 </GameScene>
 
-For another example (including its use with [Quantum Bridges](quantum_bridge.md)) see this MS Paint diagram I can't be bothered
-to touch up:
+结合[量子链接仓](quantum_bridge.md)的远距传输方案：
 
-![P2P and quantum bridges](../assets/diagrams/p2p_quantum_network.png)
+![量子通道示意图](../assets/diagrams/p2p_quantum_network.png)
 
-## Nesting
+## 嵌套限制
 
-However, you cannot use this to send infinite channels through a single cable. The channel for a ME P2P tunnel will not
-pass through another ME P2P tunnel, so you cannot recursively nest them. Observe how the outer layer of ME P2P tunnels
-on the red cables are offline. Note that this only applies to ME P2P tunnels, other P2P tunnel types can pass through a ME P2P tunnel,
-as seen by the Redstone P2P tunnels working fine.
+ME通道不支持递归嵌套传输（红色线缆的ME通道处于离线状态），但其他类型通道可穿透ME通道：
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/p2p_nesting.snbt" />
   <IsometricCamera yaw="225" pitch="30" />
 </GameScene>
 
-## Linking
+## 通道绑定
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/p2p_linking_frequency.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The ends of a P2P tunnel connection can be linked using a <ItemLink id="memory_card" />. The frequency will be displayed
-as a 2x2 array of colors on the back of the tunnel.
-- Shift-right-click to generate a new P2P linking frequency.
-- Right-click to paste the settings, upgrade cards, or linking frequency.
+使用<ItemLink id="memory_card" />绑定通道：
+- **Shift+右键点击**输入端生成新频率（显示为彩色矩阵）
+- **右键点击**输出端完成绑定
+- 支持单输入多输出（ME通道的频道将被均分）
 
-The tunnel you shift-right-click will be the input and the tunnel you right-click will be the output. You can have multiple outputs,
-but with ME P2P tunnels, the channels flowing in the input will be split between the outputs, so you can't duplicate channels.
-
-## Recipe
+## 合成配方
 
 <RecipeFor id="me_p2p_tunnel" />

@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Growth Accelerator
+  title: 晶体催生器
   icon: growth_accelerator
   position: 310
 categories:
@@ -10,28 +10,28 @@ item_ids:
 - ae2:growth_accelerator
 ---
 
-# The Growth Accelerator
+# 晶体催生器
 
 <BlockImage id="growth_accelerator" p:powered="true" scale="8"/>
 
-The Growth Accelerator massively accelerates [the growth of](../ae2-mechanics/certus-growth.md) certus or amethyst when placed adjacent to the budding block.
+当放置在石英母岩相邻位置时，晶体催生器能大幅加速[赛特斯石英或紫水晶](../ae2-mechanics/certus-growth.md)的生长。
 
-Curiously, it can *also* accelerate the growth of various plants.
+有趣的是，它*也能*加速各种植物的生长速度。
 
 <GameScene zoom="6" interactive={true}>
   <ImportStructure src="../assets/assemblies/growth_accelerator.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-To power it manually, place a <ItemLink id="crank" /> on the top or bottom and right-click it.
+如需手动供能，可在设备顶部或底部放置<ItemLink id="crank" />（木质曲柄）并右键点击。
 
-It only connects to cables on its ends where the pink fluix greebles are.
+该设备仅通过两端带有粉色福鲁伊克斯装饰的部位连接线缆。
 
 <GameScene zoom="6" background="transparent">
 <ImportStructure src="../assets/assemblies/accelerator_connections.snbt" />
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Recipe
+## 合成配方
 
 <RecipeFor id="growth_accelerator" />

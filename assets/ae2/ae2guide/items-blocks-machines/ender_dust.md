@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Ender Dust
+  title: 末影粉
   icon: ender_dust
   position: 010
 categories:
@@ -10,13 +10,13 @@ item_ids:
 - ae2:ender_dust
 ---
 
-# Ender Dust
+# 末影粉
 
 <ItemImage id="ender_dust" scale="4" />
 
-An ender pearl that has been crushed by an <ItemLink id="inscriber" />. Used in the production of <ItemLink id="wireless_booster" />s
-and <ItemLink id="quantum_entangled_singularity" /> pairs.
+经<ItemLink id="inscriber" />压印器粉碎的末影珍珠。用于制造<ItemLink id="wireless_booster" />无线增强器
+和成对<ItemLink id="quantum_entangled_singularity" />量子纠缠奇点。
 
-## Recipe
+## 配方
 
 <RecipeFor id="ender_dust" />

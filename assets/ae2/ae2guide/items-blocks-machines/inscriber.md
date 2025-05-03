@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Inscriber
+  title: 压印器
   icon: inscriber
   position: 310
 categories:
@@ -10,20 +10,16 @@ item_ids:
 - ae2:inscriber
 ---
 
-# The Inscriber
+# 压印器
 
 <BlockImage id="inscriber" scale="8" />
 
-The inscriber is used to inscribe circuits and [processors](processors.md) using [presses](presses.md), and to crush various items into dust.
-It can accept either AE2's power (AE) or Fabric/Forge Energy (E/FE). It can be sided, such that inserting items from different sides
-inserts them into different slots in its inventory. To facilitate this, it can be rotated with a <ItemLink id="certus_quartz_wrench" />.
-It can also be set to push the results of crafts to adjacent inventories.
+压印器用于通过[压印模板](presses.md)刻印电路和[处理器](processors.md)，并将各种物品粉碎成粉末。
+可接受AE2能源（AE）或Fabric/Forge Energy（E/FE）。支持分面输入，不同面可插入不同槽位物品。可通过<ItemLink id="certus_quartz_wrench" />旋转方向。支持将合成产物推入相邻容器。
 
-The size of the input buffer can be adjusted. For example, if you want to feed from one inventory into a big array of inscribers,
-you want a small buffer so that the materials are distributed between the inscribers more optimally (instead of the first
-inscriber filling up to 64 and the rest being empty).
+输入缓冲区大小可调节。例如在批量压印阵列中，小缓冲区能优化材料分配（避免首个压印器装满64个而其他空闲）。
 
-The 4 circuit presses are used to craft [processors](processors.md)
+四种电路压印模板用于制作[处理器](processors.md):
 
 <Row>
   <ItemImage id="silicon_press" scale="4" />
@@ -35,49 +31,46 @@ The 4 circuit presses are used to craft [processors](processors.md)
   <ItemImage id="engineering_processor_press" scale="4" />
 </Row>
 
-While the name press can be used to name blocks similar to an anvil, useful for labeling things in a <ItemLink id="pattern_access_terminal" />.
+名称压印模板可为方块命名（类似铁砧），适用于<ItemLink id="pattern_access_terminal" />中的标记：
 
 <ItemImage id="name_press" scale="4" />
 
-## Settings
+## 设置项
 
-* The inscriber can be set to be sided (as explained below) or allow inputs to any slot from any side, with an internal filter deciding
-    what goes where. While in non-sided mode, items cannot be extracted from the top and bottom slots.
-* The inscriber can be set to push items into adjacent inventories.
-* The size of the input buffer can be adjusted, the large option is for a standalone inscriber you feed manually, the
-small option is to make large parallelized setups more viable.
+* 可切换分面模式（特定面输入）或非分面模式（任意面输入，自动分拣）。非分面模式下无法从顶部/底部槽取出物品
+* 可启用向相邻容器推送物品
+* 输入缓冲区大小可调节：大缓冲区适合手动操作，小缓冲区适合并行阵列
 
-## The GUI And Sidedness
+## GUI界面与分面输入
 
-When in sided mode, the inscriber filters what goes where by which side you insert or extract from.
+分面模式下，不同面的输入/输出对应不同槽位：
 
-![Inscriber GUI](../assets/diagrams/inscriber_gui.png) ![Inscriber Sides](../assets/diagrams/inscriber_sides.png)
+![压印器GUI](../assets/diagrams/inscriber_gui.png) ![压印器分面示意图](../assets/diagrams/inscriber_sides.png)
 
-A. **Top Input** accessed via the top side of the inscriber (items can be both pushed to and pulled from this slot)
+A. **顶部输入槽** - 通过设备顶部面存取（可推入/拉取）
 
-B. **Center Input** inserted to via the left, right, front, and rear sides of the inscriber (items can only be pushed to this slot, not pulled from)
+B. **中部输入槽** - 通过左右前后四面推入（仅限输入，不可取出）
 
-C. **Bottom Input** accessed via the bottom side of the inscriber (items can be both pushed to and pulled from this slot)
+C. **底部输入槽** - 通过设备底部面存取（可推入/拉取）
 
-D. **Output** pulled from via the left, right, front, and rear sides of the inscriber (items can only be pulled from this slot, not pushed to)
+D. **输出槽** - 通过左右前后四面拉取（仅限输出，不可输入）
 
-## Simple Automation
+## 简单自动化示例
 
-As an example, the sidedness and rotateability mean you can semi-automate inscribers like so:
+利用分面模式和可旋转性实现半自动化：
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/inscriber_hopper_automation.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Or just pipe into and out of the inscriber when in non-sided mode.
+非分面模式下可直接通过管道输入输出
 
-## Upgrades
+## 可安装升级
 
-The inscriber supports the following [upgrades](upgrade_cards.md):
+压印器支持以下[升级卡](upgrade_cards.md)：
+* <ItemLink id="speed_card" />（加速卡）
 
-*   <ItemLink id="speed_card" />
-
-## Recipe
+## 合成配方
 
 <RecipeFor id="inscriber" />

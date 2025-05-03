@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Cell Workbench
+  title: 元件工作台
   icon: cell_workbench
   position: 310
 categories:
@@ -10,26 +10,25 @@ item_ids:
 - ae2:cell_workbench
 ---
 
-# The Cell Workbench
+# 元件工作台
 
 <BlockImage id="cell_workbench" scale="8" />
 
-The Cell Workbench allows you to configure [storage cells](storage_cells.md) and <ItemLink id="view_cell" />s.
+元件工作台用于配置[存储元件](../items-blocks-machines/storage_cells.md)和<ItemLink id="view_cell" />。
 
-You can add [upgrade cards](upgrade_cards.md) and configure "partitions" to filter what the cell will store.
+主要功能：
+- 添加[升级卡](../items-blocks-machines/upgrade_cards.md)
+- 设置存储分区（过滤存储内容）
+- 支持从JEI/REI拖拽物品/流体进行配置（无需实际拥有该物品）
+- 右键使用流体容器（如桶或流体储罐）可设置流体过滤
 
-Items and fluids can be dragged into the slots from JEI/REI even if you don't actually have any of that item.
+## 配置选项
 
-Right-click with a fluid container (like a bucket or fluid tank) to set that fluid as a filter instead of the bucket or tank item.
+顶部左侧提供三个功能按钮：
+1. 根据元件现有内容自动分区
+2. 清空所有分区设置
+3. 启用配置保留模式（拔出元件时保留设置，便于批量配置）
 
-## Settings
-
-The cell workbench has a few buttons on the top-left:
-
-*   You can partition a cell based on its existing contents
-*   You can clear the cell's partitioning
-*   The workbench can be set to retain the partition settings when the cell is removed, allowing you to copy settings between cells.
-
-## Recipe
+## 合成配方
 
 <RecipeFor id="cell_workbench" />

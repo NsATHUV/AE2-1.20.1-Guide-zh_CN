@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Patterns
+  title: 样板
   icon: crafting_pattern
   position: 410
 categories:
@@ -14,47 +14,54 @@ item_ids:
 - ae2:stonecutting_pattern
 ---
 
-# Patterns
+# 样板系统
 
 <ItemImage id="crafting_pattern" scale="4" />
 
-Patterns are made in a <ItemLink id="pattern_encoding_terminal" /> out of blank patterns, and inserted in <ItemLink id="pattern_provider" />s
-or <ItemLink id="molecular_assembler" />s.
+样板在<ItemLink id="pattern_encoding_terminal" />中使用空白样板制作，可插入<ItemLink id="pattern_provider" />或<ItemLink id="molecular_assembler" />实现自动化生产。
 
-There are several different types of pattern for different things:
+## 样板类型
 
-*   <ItemLink id="crafting_pattern" />s encode recipes made by a crafting table. They can be put directly in a <ItemLink id="molecular_assembler" /> to make it
-    craft the result whenever given the ingredients, but their main use is in a <ItemLink id="pattern_provider" /> next to a molecular assembler.
-    Pattern providers have special behavior in this case, and will send the relevant pattern along with the ingredients to adjacent assemblers.
-    Since assemblers auto-eject the results of crafts to adjacent inventories, an assembler on a pattern provider is all that is needed to automate crafting patterns.
+### 合成样板
 
-***
+<ItemImage id="crafting_pattern" scale="4" />
 
-*   <ItemLink id="smithing_table_pattern" />s are very similar to crafting patterns, but they encode smithing table recipes. They are also automated by a pattern
-    provider and molecular assembler, and function in the exact same way. In fact, crafting, smithing, and stonecutting patterns can be
-    used in the same setup.
+* 编码工作台合成配方，可直接放入分子装配室实现即时合成
+* 主要应用于样板供应器+分子装配室组合，供应器会推送原料至装配室并自动回收产物
 
 ***
 
-*   <ItemLink id="stonecutting_pattern" />s are very similar to crafting patterns, but they encode stonecutter recipes. They are also automated by a pattern
-    provider and molecular assembler, and function in the exact same way. In fact, crafting, smithing, and stonecutting patterns can be
-    used in the same setup.
+### 锻造台样板
+
+<ItemImage id="smithing_table_pattern" scale="4" />
+
+* 编码锻造台升级配方，自动化流程与合成样板完全兼容
+* 支持与合成/切石样板混用同一自动化产线
 
 ***
 
-*   <ItemLink id="processing_pattern" />s are where a lot of flexibility in autocrafting comes from. They are the most generalized type, simply
-    saying "if a pattern provider pushes these ingredients to adjacent inventories, the ME system will recieve these items at some point in the
-    near or distant future". They are how you will autocraft with almost any modded machine, or furnaces and the like. Because they are so
-    general in use and do not care what happens between pushing ingredients and receiving the result, you can do some really funky stuff, like inputting
-    the ingredients into an entire complex factory production chain which will sort out stuff, take in other ingredients from infinitely-producing
-    farms, print the entirety of the Bee Movie script, the ME system does not care as long as it gets the result the pattern specifies. In fact,
-    it doesn't even care if the ingredients are in any way related to the result. You could tell it "1 cherry wood planks = 1 nether star" and have
-    your wither farm kill a wither upon receiving a cherry wood planks and it would work.
+### 切石机样板
 
-Multiple <ItemLink id="pattern_provider" />s with identical patterns are supported and work in parallel. Additionally, you can have a pattern say,
-for example, 8 cobblestone = 8 stone instead of 1 cobblestone = 1 stone, and the pattern provider will insert 8 cobblestone into
-your smelting setup every operation instead of one at a time.
+<ItemImage id="stonecutting_pattern" scale="4" />
 
-## Recipe
+* 编码切石机加工配方，操作逻辑与前述样板类型一致
+* 可实现多类型样板混合自动化生产
+
+***
+
+### 处理样板
+
+<ItemImage id="processing_pattern" scale="4" />
+
+* 提供最高灵活度的广义合成方案，仅定义"投入原料→获取产物"关系
+* 兼容所有模组机器及熔炉等原版设备，不限制中间工艺流程
+* 支持自定义生产链（如"1樱花木板=1下界之星"的自动化指令触发）
+
+## 高级特性
+
+* **批量处理**：可配置8圆石=8石头的配方，实现单次操作批量投料
+* **并行生产**：多个同配方样板供应器可协同工作提升效率
+
+## 合成配方
 
 <RecipeFor id="blank_pattern" />

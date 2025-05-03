@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: ME IO Port
+  title: ME IO端口
   icon: io_port
   position: 210
 categories:
@@ -10,29 +10,26 @@ item_ids:
 - ae2:io_port
 ---
 
-# The ME I/O Port
+# ME IO端口
 
 <BlockImage id="io_port" p:powered="true" scale="8" />
 
-The IO Port allows you to rapidly fill or empty [storage cells](../items-blocks-machines/storage_cells.md) to or from
-[network storage](../ae2-mechanics/import-export-storage.md).
+IO端口可用于快速将[存储元件](../items-blocks-machines/storage_cells.md)与[网络存储](../ae2-mechanics/import-export-storage.md)之间进行数据转移。
 
-It can be rotated with a <ItemLink id="certus_quartz_wrench" />.
+可使用<ItemLink id="certus_quartz_wrench" />旋转设备方向。
 
-## Settings
+## 设置项
 
-*   The IO Port can be set to move the cell to the output slots when the cell is empty, full, or when the work is done.
-*   If a <ItemLink id="redstone_card" /> is inserted, there will be options for various redstone conditions
-*   In the center of the GUI, there is an arrow to set which direction to transfer items, from the cell to [network storage](../ae2-mechanics/import-export-storage.md),
-    or from storage to the cell.
+* 可配置当元件为空/已满/操作完成时自动移至输出槽
+* 安装<ItemLink id="redstone_card" />后支持红石触发条件设置
+* GUI中央箭头可设置传输方向：从元件到网络存储，或反向传输
 
-## Upgrades
+## 可安装升级
 
-The IO Port supports the following [upgrades](upgrade_cards.md):
+IO端口支持以下[升级卡](upgrade_cards.md)：
+* <ItemLink id="speed_card" /> 提升单次操作传输量
+* <ItemLink id="redstone_card" /> 添加红石控制（高电平激活/低电平激活/脉冲激活）
 
-*   <ItemLink id="speed_card" /> increases the amount of stuff moved per operation
-*   <ItemLink id="redstone_card" /> adds redstone control, allowing active on high signal, low signal, or once per pulse
-
-## Recipe
+## 合成配方
 
 <RecipeFor id="io_port" />

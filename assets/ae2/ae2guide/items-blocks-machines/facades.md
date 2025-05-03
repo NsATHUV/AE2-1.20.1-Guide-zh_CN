@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Facades
+  title: 伪装板
   icon: facade
   icon_nbt: '{item: "minecraft:stone"}'
   position: 110
@@ -11,39 +11,38 @@ item_ids:
 - ae2:facade
 ---
 
-# Facades
+# 伪装板
 
-Facades can be used to make your base appear more clean. They can cover up both sizes of cable, and be made out of many
-kinds of blocks.
+伪装板可用于让基地看起来更整洁。它们能覆盖线缆的各个面，并支持使用多种方块的材质进行伪装。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/facades_1.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-They can cover all sides of a cable, but will let [subparts](../ae2-mechanics/cable-subparts.md) and cable connections
-protrude though.
+它们可以覆盖线缆的所有面，但允许[子部件](../ae2-mechanics/cable-subparts.md)和线缆连接点穿透显示。
 
 <GameScene zoom="6"  interactive={true}>
   <ImportStructure src="../assets/assemblies/facades_2.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Be clever with them to improve your base aesthetic or make blocks with different textures on each side.
+巧妙运用伪装板可以提升基地的美观度，或制作具有不同面材质的特殊方块。
 
 <GameScene zoom="4" interactive={true}>
   <ImportStructure src="../assets/assemblies/facades_3.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Hiding Facades
+## 隐藏伪装板
 
-Facades will be hidden while holding a <a href="network_tool.md">network tool</a> in either hand.
+手持<a href="network_tool.md">网络工具</a>时，伪装板将被隐藏。
 
-You can interact with blocks behind hidden facades without having to remove the facades first.
+此时可以直接与伪装板后方的方块交互，无需先行移除伪装板。
 
-## Recipe
+## 合成配方
 
-Place the block you want the texture of in the middle of 4 <ItemLink id="cable_anchor" />s.
+在4个<ItemLink id="cable_anchor" />（线缆锚）中间放置需要伪装的方块。
+（**下面只是一张图片，鼠标指上去看不到名字很正常，别奇怪哦！**）
 
-![Facade Recipe](../assets/diagrams/facade_recipe.png)
+![伪装板合成配方](../assets/diagrams/facade_recipe.png)

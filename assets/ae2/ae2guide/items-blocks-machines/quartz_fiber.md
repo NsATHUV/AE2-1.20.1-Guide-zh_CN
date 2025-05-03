@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Quartz Fiber
+  title: 石英纤维
   icon: quartz_fiber
   position: 110
 categories:
@@ -10,20 +10,17 @@ item_ids:
 - ae2:quartz_fiber
 ---
 
-# The Quartz Fiber
+# 石英纤维
 
 <GameScene zoom="8" background="transparent">
 <ImportStructure src="../assets/assemblies/quartz_fiber.snbt" />
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-The quartz fiber is used to share power between [networks](../ae2-mechanics/me-network-connections.md), while keeping them separate. This allows you to power
-[subnetworks](../ae2-mechanics/subnetworks.md)
-without needing to put energy acceptors and power cables everywhere. It can also be used to keep cables from connecting,
-although using cables of differing colors, or using <ItemLink id="cable_anchor" /> is cheaper and more effective.
+石英纤维用于在保持[网络](../ae2-mechanics/me-network-connections.md)独立的同时共享能源。通过这种方式，您无需在各处布置能源接收器和能源线缆即可为[子网](../ae2-mechanics/subnetworks.md)供能。虽然使用不同颜色的线缆或<ItemLink id="cable_anchor" />（线缆锚）更为经济高效，但石英纤维也可用于防止线缆连接。
 
-They are [cable subparts](../ae2-mechanics/cable-subparts.md).
+该设备属于[线缆子部件](../ae2-mechanics/cable-subparts.md)。
 
-## Recipe
+## 合成配方
 
 <RecipeFor id="quartz_fiber" />

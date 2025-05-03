@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Sky Stone Dust
+  title: 陨石粉
   icon: sky_dust
   position: 010
 categories:
@@ -10,15 +10,14 @@ item_ids:
 - ae2:sky_dust
 ---
 
-# Sky Stone Dust
+# 陨石粉
 
 <ItemImage id="sky_dust" scale="4" />
 
-A <ItemLink id="sky_stone_block" /> block that has been crushed by an <ItemLink id="inscriber" />. Used in the production of
-<ItemLink id="cell_component_256k" /> and <ItemLink id="sky_stone_block" />.
+被<ItemLink id="inscriber" />（压印器）粉碎的<ItemLink id="sky_stone_block" />（陨石）。用于制作<ItemLink id="cell_component_256k" />（256k ME存储组件）和陨石块。
 
-Can also be obtained by pointing an <ItemLink id="annihilation_plane" /> upward at world height limit.
+也可通过将<ItemLink id="annihilation_plane" />（ME破坏面板）朝上放置在世界高度上限处获得。
 
-## Recipe
+## 合成配方
 
 <RecipeFor id="sky_dust" />

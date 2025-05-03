@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Matter Ball
+  title: 物质球
   icon: matter_ball
   position: 010
 categories:
@@ -10,10 +10,10 @@ item_ids:
 - ae2:matter_ball
 ---
 
-# Matter Balls
+# 物质球
 
 <ItemImage id="matter_ball" scale="4" />
 
-A ball of generic matter, useful as ammunition for a <ItemLink id="matter_cannon" /> or for producing [paintballs](paintballs.md).
+一种通用物质聚合体，可用作<ItemLink id="matter_cannon" />（物质炮）的弹药或用于生产[染色球](paintballs.md)。
 
-Made with 256 items or buckets in a <ItemLink id="condenser" /> in matter ball mode.
+在<ItemLink id="condenser" />（物质聚合器）的物质球模式下，消耗256个物品或流体桶可制成。

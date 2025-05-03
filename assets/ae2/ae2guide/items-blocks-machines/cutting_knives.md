@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Cutting Knives
+  title: 切割工具
   icon: certus_quartz_cutting_knife
   position: 410
 categories:
@@ -11,7 +11,7 @@ item_ids:
 - ae2:nether_quartz_cutting_knife
 ---
 
-# Quartz Tools
+# 切割工具
 
 <Row>
   <ItemImage id="certus_quartz_cutting_knife" scale="4" />
@@ -19,12 +19,11 @@ item_ids:
   <ItemImage id="nether_quartz_cutting_knife" scale="4" />
 </Row>
 
-Cutting knives are used to make <ItemLink id="name_press" />es and <ItemLink id="cable_anchor" />s.
+切割刀用于制作<ItemLink id="name_press" />和<ItemLink id="cable_anchor" />。
 
-To craft a name press, right click the cutting knife and insert an ingot of metal, you will then have to type the name you
-wish to write onto the plate then simply extract the finished plate.
+制作名称压印模板只需手持切割刀右击并放入一个金属锭，输入希望印上去的名字后拿出产物即可。
 
-## Recipes
+## 配方
 
 <Row>
   <RecipeFor id="certus_quartz_cutting_knife" />

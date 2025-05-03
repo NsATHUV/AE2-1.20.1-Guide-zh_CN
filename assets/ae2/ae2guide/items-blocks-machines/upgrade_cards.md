@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Upgrade Cards
+  title: 升级卡
   icon: speed_card
   position: 410
 categories:
@@ -20,7 +20,7 @@ item_ids:
 - ae2:energy_card
 ---
 
-# Upgrade Cards
+# 升级卡系统
 
 <Row>
   <ItemImage id="redstone_card" scale="2" />
@@ -42,10 +42,9 @@ item_ids:
   <ItemImage id="energy_card" scale="2" />
 </Row>
 
-Upgrade cards change the behavior of AE2 [devices](../ae2-mechanics/devices.md) and machines, increasing their speed, improving their
-filter capacity, enabling redstone control, etc.
+升级卡用于改变AE2[设备](../ae2-mechanics/devices.md)行为，可提升运行速度、增加过滤容量、启用红石控制等功能。
 
-## Card Components
+## 基础组件
 
 <Row>
   <ItemImage id="basic_card" scale="2" />
@@ -53,7 +52,7 @@ filter capacity, enabling redstone control, etc.
   <ItemImage id="advanced_card" scale="2" />
 </Row>
 
-Cards are crafted with either basic or advanced card bases
+所有升级卡需使用基础或高级卡基制作：
 
 <Row>
   <RecipeFor id="basic_card" />
@@ -61,110 +60,99 @@ Cards are crafted with either basic or advanced card bases
   <RecipeFor id="advanced_card" />
 </Row>
 
-## Redstone Card
+## 红石卡
 
 <ItemImage id="redstone_card" scale="2" />
 
-Redstone cards add redstone control, adding a toggle button in the device's GUI to swap between various redstone conditions.
+为设备添加红石控制功能，在GUI中显示模式切换按钮，支持多种红石信号条件。
 
 <RecipeFor id="redstone_card" />
 
-## Capacity Card
+## 容量卡
 
 <ItemImage id="capacity_card" scale="2" />
 
-Capacity cards increase the amount of filter slots in import, export, and storage busses, and formation planes.
+提升输入/输出总线、存储总线及成型面板的过滤槽数量。
 
 <RecipeFor id="capacity_card" />
 
-## Overflow Destruction Card
+## 溢出销毁卡
 
 <ItemImage id="void_card" scale="2" />
 
-Overflow destruction cards can be applied to [storage cells](storage_cells.md) in a <ItemLink id="cell_workbench" />
-and will delete incoming items if the cell is full. (make sure to [partition](cell_workbench.md) your cells!) Combined with an equal distribution card,
-items will be voided if that specific item's section of the cell is full, even if other items' sections are empty.
+在<ItemLink id="cell_workbench" />中安装至[存储元件](storage_cells.md)后，当元件满载时销毁多余物品（需设置[过滤](cell_workbench.md)）。配合均分卡使用时，即使其他分区未满，特定类型分区满载时也会销毁多余物品。
 
 <RecipeFor id="void_card" />
 
-## Fuzzy Card
+## 模糊卡
 
 <ItemImage id="fuzzy_card" scale="2" />
 
-Fuzzy cards let devices and tools with filters filter by damage level and/or ignore item NBT, allowing you to export
-all iron axes no matter the damage level and enchantments, or only export damaged diamond swords, not fully repaired ones.
+允许设备按耐久度过滤或忽略物品NBT数据。示例如下：
 
-Below is an example of how Fuzzy Damage comparison mods work, left side is the
-bus config, top is the compared item.
+| 25%阈值              | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 全新镐 |
+| ------------------- | -------- | -------- | -------- | ----- |
+| 即将损坏的镐          | ✅        |          |          |       |
+| 修复完成的镐          |          | ✅        | ✅        | ✅     |
 
-| 25%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | \*\*\*\*            | \*\*\*\*            | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            | ✅                   | ✅                   | ✅                   |
+| 50%阈值              | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 全新镐 |
+| ------------------- | -------- | -------- | -------- | ----- |
+| 即将损坏的镐          | ✅        | ✅        |          |       |
+| 修复完成的镐          |          |          | ✅        | ✅     |
 
-| 50%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | \*\*\*\*            | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            | \*\*\*\*            | ✅                   | ✅                   |
+| 75%阈值              | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 全新镐 |
+| ------------------- | -------- | -------- | -------- | ----- |
+| 即将损坏的镐          | ✅        | ✅        |          |       |
+| 修复完成的镐          |          |          | ✅        | ✅     |
 
-| 75%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | \*\*\*\*            | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            |                     | ✅                   | ✅                   |
+| 99%阈值              | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 全新镐 |
+| ------------------- | -------- | -------- | -------- | ----- |
+| 即将损坏的镐          | ✅        | ✅        | ✅        |       |
+| 修复完成的镐          |          |          |          | ✅     |
 
-| 99%                    | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | ✅                   | \*\*\*\*            |
-| Fully Repaired Pickaxe | \*\*\*\*            | \*\*\*\*            | \*\*\*\*            | ✅                   |
-
-| Ignore                 | 10% Damaged Pickaxe | 30% Damaged Pickaxe | 80% Damaged Pickaxe | Full Repair Pickaxe |
-| ---------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Nearly Broken Pickaxe  | ✅                   | ✅                   | ✅                   | **✅**               |
-| Fully Repaired Pickaxe | **✅**               | **✅**               | **✅**               | ✅                   |
+| 忽略耐久              | 10%耐久镐 | 30%耐久镐 | 80%耐久镐 | 全新镐 |
+| ------------------- | -------- | -------- | -------- | ----- |
+| 即将损坏的镐          | ✅        | ✅        | ✅        | **✅** |
+| 修复完成的镐          | **✅**    | **✅**    | **✅**    | ✅     |
 
 <RecipeFor id="fuzzy_card" />
 
-## Acceleration Card
+## 加速卡
 
 <ItemImage id="speed_card" scale="2" />
 
-Acceleration cards make stuff go faster, making import and export busses move more items per operation, and making inscribers
-and assemblers work faster.
+提升设备运行速度：输入/输出总线每次操作传输更多物品，压印器和分子装配室工作更快。
 
 <RecipeFor id="speed_card" />
 
-## Inverter Card
+## 反相卡
 
 <ItemImage id="inverter_card" scale="2" />
 
-Inverter cards swap filters in devices and tools from whitelist to blacklist.
+将设备的过滤模式从白名单切换为黑名单。
 
 <RecipeFor id="inverter_card" />
 
-## Crafting Card
+## 合成卡
 
 <ItemImage id="crafting_card" scale="2" />
 
-Crafting cards let the device send crafting requests to your [autocrafting](../ae2-mechanics/autocrafting.md)
-system to get the items it desires.
+允许设备向[自动合成](../ae2-mechanics/autocrafting.md)系统发送合成请求获取所需物品。
 
 <RecipeFor id="crafting_card" />
 
-## Equal Distribution Card
+## 均分卡
 
 <ItemImage id="equal_distribution_card" scale="2" />
 
-Equal distribution cards can be applied to [storage cells](storage_cells.md) in a <ItemLink id="cell_workbench" /> and
-split the cell into equally-sized sections based on what the card is [partitioned](cell_workbench.md) to. This prevents one item type from completely
-filling the cell.
+在<ItemLink id="cell_workbench" />中安装至[存储元件](storage_cells.md)后，根据过滤设置将存储空间均分，防止单一类型占满元件。
 
 <RecipeFor id="equal_distribution_card" />
 
-## Energy Card
+## 能源卡
 
 <ItemImage id="energy_card" scale="2" />
 
-Energy cards add more energy storage to certain tools like portable terminals, and make <ItemLink id="vibration_chamber" />s
-more efficient.
+提升便携终端等工具的电池容量，并提高<ItemLink id="vibration_chamber" />（谐振仓）的能源转换效率。
 
 <RecipeFor id="energy_card" />

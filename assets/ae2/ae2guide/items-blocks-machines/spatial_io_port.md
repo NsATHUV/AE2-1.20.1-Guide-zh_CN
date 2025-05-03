@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Spatial IO Port
+  title: 空间IO端口
   icon: spatial_io_port
   position: 210
 categories:
@@ -10,15 +10,14 @@ item_ids:
 - ae2:spatial_io_port
 ---
 
-# The Spatial IO Port
+# ME空间IO端口
 
 <BlockImage id="spatial_io_port" p:powered="true" scale="8" />
 
-The Spatial IO Port is used in [spatial IO](../ae2-mechanics/spatial-io.md) to hold the [spatial cell](spatial_cells.md)
-and control the spatial IO operation.
+空间IO端口用于[空间存储操作](../ae2-mechanics/spatial-io.md)，可容纳[空间存储元件](spatial_cells.md)并控制空间交换过程。
 
-The cell can be inserted and extracted by any item logistics like hoppers or ae2 busses, if you want to automate it.
+该端口支持通过漏斗、AE2总线等物品传输设备实现自动化存取元件操作。
 
-## Recipe
+## 合成配方
 
 <RecipeFor id="spatial_io_port" />

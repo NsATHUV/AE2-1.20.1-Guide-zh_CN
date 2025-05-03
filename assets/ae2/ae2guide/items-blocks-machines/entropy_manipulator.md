@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Entropy Manipulator
+  title: 熵变机械臂
   icon: entropy_manipulator
   position: 410
 categories:
@@ -10,17 +10,20 @@ item_ids:
 - ae2:entropy_manipulator
 ---
 
-# The Entropy Manipulator
+# 熵变机械臂
 
 <ItemImage id="entropy_manipulator" scale="4" />
 
-The Entropy Manipulator allows you to heat and cool things by right-clicking and shift-right-clicking respectively. It can't do much,
-just things like evaporating or freezing water, solidifying lava to obsidian, smelting logs to charcoal, and smelting cobble to stone in-world.
+该工具可通过右键点击加热物体，Shift+右键点击冷却物体。主要功能包括：
+- 蒸发/冻结水体
+- 将岩浆固化为黑曜石
+- 将原木烧制成木炭
+- 将圆石烧制成石头
 
-If there is not a specific thing it can do to a block, it will act as a flint-and-steel.
+若无特定操作对象时，可作为打火石使用。
 
-Its energy can be recharged in a <ItemLink id="charger" />.
+能量可通过<ItemLink id="charger" />充能器补充。
 
-## Recipe
+## 配方
 
 <RecipeFor id="entropy_manipulator" />

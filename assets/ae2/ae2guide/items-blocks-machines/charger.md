@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Charger
+  title: 充能器
   icon: charger
   position: 310
 categories:
@@ -10,34 +10,40 @@ item_ids:
 - ae2:charger
 ---
 
-# The Charger
+# 充能器
 
 <BlockImage id="charger" scale="8" />
 
-The Charger provides a way to charge
-supported tools, and <ItemLink id="certus_quartz_crystal" />.
+核心功能：
+- 为兼容工具充能
+- 将<ItemLink id="certus_quartz_crystal" />转化为<ItemLink id="charged_certus_quartz_crystal" />
 
-Power can be provided via the top or bottom, via either AE2's [cables](cables.md), or other mod power cables. It can
-accept either AE2's power (AE) or Forge Energy (FE). Items can be inserted or removed from any side. Only the results can
-be removed, so no need for filters to prevent removing certus crystals instead of charged certus. Can be rotated with a
-<ItemLink id="certus_quartz_wrench" /> in order to facilitate automation.
+## 技术参数
 
-Can be used to create <ItemLink id="charged_certus_quartz_crystal" />
-from <ItemLink id="certus_quartz_crystal" />, and <ItemLink id="meteorite_compass" /> from <ItemLink id="minecraft:compass" />.
+* 能量接口：顶部/底部（支持AE2线缆或FE能源导管）
+* 兼容能源：AE2能源（AE）或Forge Energy（FE）
+* 物品存取：任意面（仅允许取出成品，无需过滤）
+* 方向调整：使用<ItemLink id="certus_quartz_wrench" />旋转设备朝向
 
-To power it manually, place a <ItemLink id="crank" /> on the top or bottom and right-click it until the item is charged.
+## 主要用途
 
-It also acts as the workstation for the AE2 villager.
+* 制作充能水晶：<ItemLink id="certus_quartz_crystal" /> → <ItemLink id="charged_certus_quartz_crystal" />
+* 制作陨石罗盘：<ItemLink id="minecraft:compass" /> → <ItemLink id="meteorite_compass" />
+* 村民职业工作站
 
-## Simple Automation
+## 手动充能
 
-As an example, the rotateability lets you semi-automate chargers like so:
+在顶部/底部安装<ItemLink id="crank" />，右键转动曲柄直至物品完成充能。
+
+## 简易自动化示例
+
+通过调整朝向实现半自动化供料：
 
 <GameScene zoom="4" background="transparent">
   <ImportStructure src="../assets/assemblies/charger_hopper.snbt" />
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Recipe
+## 合成配方
 
 <RecipeFor id="charger" />

@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Fluix Dust
+  title: 福鲁伊克斯粉
   icon: fluix_dust
   position: 010
 categories:
@@ -12,13 +12,12 @@ item_ids:
 - ae2:fluix_dust
 ---
 
-# Fluix Dust
+# 福鲁伊克斯粉
 
 <ItemImage id="fluix_dust" scale="4" />
 
-A <ItemLink id="fluix_crystal" /> that has been crushed by an <ItemLink id="inscriber" />. Used in the production of
-several AE2 machines and components.
+被<ItemLink id="inscriber" />（压印器）粉碎的<ItemLink id="fluix_crystal" />。用于制造多种AE2机器和组件。
 
-## Recipe
+## 合成配方
 
 <RecipeFor id="fluix_dust" />

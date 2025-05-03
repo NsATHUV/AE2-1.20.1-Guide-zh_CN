@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Formation Plane
+  title: 成型面板
   icon: formation_plane
   position: 210
 categories:
@@ -10,54 +10,48 @@ item_ids:
 - ae2:formation_plane
 ---
 
-# The Formation Plane
+# 成型面板
 
 <GameScene zoom="8" background="transparent">
   <ImportStructure src="../assets/blocks/formation_plane.snbt" />
 </GameScene>
 
-The Formation Plane places blocks and drops items. It works similarly to an insert-only <ItemLink id="storage_bus" />,
-placing/dropping when things are "stored" in it by [devices](../ae2-mechanics/devices.md) inserting into [network storage](../ae2-mechanics/import-export-storage.md),
-like <ItemLink id="import_bus" />ses and <ItemLink id="interface" />s.
+成型面板用于放置方块和丢弃物品。其功能类似仅允许存入的<ItemLink id="storage_bus" />，当[设备](../ae2-mechanics/devices.md)（如<ItemLink id="import_bus" />和<ItemLink id="interface" />）向[网络存储](../ae2-mechanics/import-export-storage.md)存入物品时触发放置/丢弃操作。
 
 <GameScene zoom="6" interactive={true}>
   <ImportStructure src="../assets/assemblies/formation_plane_demonstration.snbt" />
   <IsometricCamera yaw="255" pitch="30" />
 </GameScene>
 
-This [device](../ae2-mechanics/devices.md) makes use of the mechanics used by storage busses in things like [pipe subnets](../example-setups/pipe-subnet.md),
-and can replace storage busses in those setups if you want to drop items/place blocks instead of transport items.
+该[设备](../ae2-mechanics/devices.md)利用了[管道子网](../example-setups/pipe-subnet.md)中存储总线的机制，若需要丢弃物品/放置方块而非运输物品，可用其替代存储总线。
 
-They are [cable subparts](../ae2-mechanics/cable-subparts.md).
+成型面板属于[线缆子部件](../ae2-mechanics/cable-subparts.md)。
 
-**REMEMBER TO ENABLE FAKE PLAYERS IN YOUR CHUNK CLAIM**
+**请确保在领地插件中启用假玩家权限**
 
-## Filtering
+## 过滤设置
 
-By default the plane will place/drop anything. Items inserted into its filter slots will act as a whitelist, only
-allowing those specific items to be placed.
+默认情况下会放置/丢弃所有物品。在过滤槽中放入物品将启用白名单模式，仅允许指定物品被放置。
 
-Items and fluids can be dragged into the slots from JEI/REI even if you don't actually have any of that item.
+即使未实际拥有某物品，仍可通过JEI/REI将其拖入过滤槽。
 
-Right-click with a fluid container (like a bucket or fluid tank) to set that fluid as a filter instead of the bucket or tank item.
+右键点击流体容器（如桶或储罐）可设置流体过滤器而非容器物品本身。
 
-## Priority
+## 优先级
 
-Priorities can be set by clicking the wrench in the top-right of the GUI.
-Items entering the network will start at the highest priority storage.
+点击GUI右上角的扳手图标可设置优先级。物品进入网络时将优先存入最高优先级的存储设备。
 
-## Settings
+## 设置项
 
-*   The plane can be set to place blocks in-world or drop items
+* 可配置为在世界上放置方块或直接丢弃物品
 
-## Upgrades
+## 可安装升级
 
-The formation plane supports the following [upgrades](upgrade_cards.md):
+成型面板支持以下[升级卡](upgrade_cards.md)：
+* <ItemLink id="capacity_card" /> 增加过滤槽数量
+* <ItemLink id="fuzzy_card" /> 启用按耐久度过滤或忽略物品NBT
+* <ItemLink id="inverter_card" /> 将过滤模式切换为黑名单
 
-*   <ItemLink id="capacity_card" /> increases the amount of filter slots
-*   <ItemLink id="fuzzy_card" /> lets the plane filter by damage level and/or ignore item NBT
-*   <ItemLink id="inverter_card" /> switches the filter from a whitelist to a blacklist
-
-## Recipe
+## 合成配方
 
 <RecipeFor id="formation_plane" />

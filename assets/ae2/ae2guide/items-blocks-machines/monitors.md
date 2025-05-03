@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: Monitors
+  title: 监控器
   icon: storage_monitor
   position: 210
 categories:
@@ -11,52 +11,47 @@ item_ids:
 - ae2:conversion_monitor
 ---
 
-# Monitors
+# ME监控器
 
 <GameScene zoom="8" background="transparent">
 <ImportStructure src="../assets/assemblies/monitors.snbt" />
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Monitors allow visualization and interaction with a single item or fluid type, without opening a GUI.
+监控器可在不打开GUI的情况下展示并操作单一物品或流体类型。
 
-Monitors will inherit the color of the [cable](cables.md) they are mounted on.
+监控器颜色继承其所在[线缆](cables.md)的颜色。
 
-If the monitor is on the floor or ceiling, you can rotate it with a <ItemLink id="certus_quartz_wrench" />.
+若安装在地面或天花板，可使用<ItemLink id="certus_quartz_wrench" />旋转方向。
 
-They are [cable subparts](../ae2-mechanics/cable-subparts.md).
+该设备属于[线缆子部件](../ae2-mechanics/cable-subparts.md)。
 
-# Storage Monitor
+# ME存储监控器
 
-Will show an item or fluid and its quantity. Put them next to your farms or something...
+显示指定物品/流体及其存储数量。可安装于自动化农场等区域作为可视化指示器。
 
-Does *not* require a [channel](../ae2-mechanics/channels.md).
+*无需*占用[频道](../ae2-mechanics/channels.md)。
 
-Keybinds:
+操作指令：
+* 右键持有物品/双击流体容器：设置监控物品
+* 空手右键：清空监控目标
+* Shift+空手右键：锁定当前配置
 
-*   Right-click with an item or double-right-click with a fluid container to set the monitor to that item/fluid.
-*   Right-click with an empty hand to clear the monitor.
-*   Shift-right-click with an empty hand to lock the monitor.
-
-## Recipe
+## 合成配方
 
 <RecipeFor id="storage_monitor" />
 
-# Conversion Monitor
+# ME交换监控器
 
-The Conversion Monitor is similar to a storage monitor, but allows you to insert or extract its configured item.
+在存储监控功能基础上，支持物品存取操作。当配置物品[可自动合成](../ae2-mechanics/autocrafting.md)且库存为零时，提取操作将触发合成界面。
 
-If the configured item is [autocraftable](../ae2-mechanics/autocrafting.md) and none are in storage, attemping to take an
-item will instead open a UI to specify the amount to be crafted.
+*需要*占用[频道](../ae2-mechanics/channels.md)。
 
-*Does* require a [channel](../ae2-mechanics/channels.md).
+扩展操作指令：
+* 左键点击：提取整组物品（库存不足时触发合成）
+* 持有物品右键：存入物品
+* 空手右键：存入背包中所有匹配物品
 
-Additional keybinds:
-
-*   Left-click to extract a stack of the configured item, or request craft of that item if none are in storage.
-*   Right-click with any item to insert that item.
-*   Right-click with an empty hand to insert all of the configured item from your inventory.
-
-## Recipe
+## 合成配方
 
 <RecipeFor id="conversion_monitor" />
