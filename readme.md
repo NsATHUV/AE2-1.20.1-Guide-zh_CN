@@ -4,7 +4,7 @@
 
 ## 特性
 - **基于深度调校的Deepseek-R1模型汉化**：汉化内容可能有误，若有疑问请提交[Issue](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/issues/new)。
-- **完全中文化**：所有指南内容均已翻译为简体中文。(待完成，目前汉化进度已在release里描述。)
+- **完全中文化**：所有指南内容均已翻译为简体中文。(待完成，目前汉化进度已在[release](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/releases/latest)里描述。)
 - **资源包形式**：无需额外安装模组，只需将资源包放入游戏目录即可使用。
 
 ## 使用方法
@@ -23,6 +23,6 @@
 - 如果在使用过程中发现翻译问题或其他问题，欢迎提交 [Issue](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/issues/new)。
 
 ## 版权声明
-本资源包遵循 [MIT 开源协议](https://opensource.org/licenses/MIT) 发布，仅供学习和交流使用。应用能源2模组的版权归其原作者所有。
+本资源包遵循 [MIT 开源协议](https://opensource.org/licenses/MIT) 发布，可自由使用分发。与应用能源2官方以及任何汉化作者无关。应用能源2模组的版权归其原作者所有。
 
 感谢您的使用，祝您游戏愉快！
