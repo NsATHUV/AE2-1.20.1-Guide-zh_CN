@@ -66,6 +66,6 @@ AE2内部并不直接使用Forge能量(Forge端)或是TechReborn能量(Fabric端
 
 <ItemLink id="dense_energy_cell" />可以存储1.6MAE，一般用于给脱网靠自身能量存储运行的网络供能或是应对[空间存储](spatial-io.md)的瞬时耗能高峰。
 
-<ItemLink id="creative_energy_cell" />是创造专用的测试用元件，提供无尽的抛瓦<sup>[1]</sup>。
+<ItemLink id="creative_energy_cell" />是创造专用的测试用元件，提供无尽的抛瓦。
 
-> \[1\]指“能量”。这么翻译是因为原文是"POWAHHHH"。
+- 此处内容来源于[nhdsd](https://github.com/nhdsd/AE2-Chinese-Guidebook)，由[NsATHUV](https://github.com/NsATHUV)修正。

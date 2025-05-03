@@ -29,4 +29,5 @@ AE被设计成与整合包中的其他模组联动以实现自动化。只需轻
 
 ---
 
-本中文指南由 】。
+本中文指南由 github [NsATHUV](https://github.com/NsATHUV) 基于 Deepseek-R1 学习AE2词库后进行汉化。见[github仓库](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN)。
+汉化的图片均来源于 Github [Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/tree/main/projects/1.20/assets/applied-energistics-2/ae2/ae2guide/assets/diagrams)。

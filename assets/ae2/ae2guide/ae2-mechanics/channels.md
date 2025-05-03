@@ -63,7 +63,7 @@ navigation:
   <IsometricCamera yaw="15" pitch="30" />
 </GameScene>
 
-[智能线缆](items-blocks-machines/cables.md)是你看到频道在网络中的路由情况的简易方式，它将显示频道的传递路径以及使用量。
+[智能线缆](../items-blocks-machines/cables.md)是你看到频道在网络中的路由情况的简易方式，它将显示频道的传递路径以及使用量。
 
 频道每经过一个节点将耗能1/128 AE/t。这意味着向一个有着8设备以及超过96节点的网络中添加一个<ItemLink id="controller" />可能会降低网络的能耗，因为它改变了频道的分配方式
 
@@ -132,7 +132,7 @@ navigation:
 
 ## 设计
 
-正如上文[频道路由](channel.md#channel-routing)中提到的，最好是设计一个树状网络，其中致密线缆从控制器处引出，然后普通线缆从致密线缆处引出，
+正如上文[频道路由](channels.md#频道路由)中提到的，最好是设计一个树状网络，其中致密线缆从控制器处引出，然后普通线缆从致密线缆处引出，
 最后[设备](../ae2-mechanics/devices.md)至多8个一组地接在普通线缆上。
 
 以下是不该做的事情的例子：

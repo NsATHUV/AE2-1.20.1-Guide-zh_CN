@@ -28,9 +28,10 @@ navigation:
 此外，系统内物品种类过多会加大整理与物品处理负载。不过对种类的限制其实并不是很严格。
 一台装满元件的<ItemLink id="drive" />可提供630的种类数，只要你不存储大量的不可堆叠物品其实已经够用了。
 
-> 译者注：Minecraft的客户端只能接受不超过2 MiB的服务端数据包。超过该限制将会导致连接被强制断开。
-> “禁人书”通过制造NBT极大的成书并在容器内大量放置，使得数据包达到此上限，进而踢出玩家，而玩家下次上线后又会因相同原因被踢出，从而达到封禁效果。
-> 与此相关的是，Minecraft每个区块的文件大小也是有上限的。由于元件被放入终端或箱子后其NBT也会存储在区块文件中，过大的NBT可能会造成坏档。
+- 译者注：Minecraft的客户端只能接受不超过2 MiB的服务端数据包。超过该限制将会导致连接被强制断开。
+- “禁人书”通过制造NBT极大的成书并在容器内大量放置，使得数据包达到此上限，进而踢出玩家，而玩家下次上线后又会因相同原因被踢出，从而达到封禁效果。
+- 与此相关的是，Minecraft每个区块的文件大小也是有上限的。由于元件被放入终端或箱子后其NBT也会存储在区块文件中，过大的NBT可能会造成坏档。
+- 此处内容来源于[nhdsd](https://github.com/nhdsd/AE2-Chinese-Guidebook)，由[NsATHUV](https://github.com/NsATHUV)修正。
 
 由于上述原因，种类数存在的意义是“坚决阻止”你把刷怪塔中各种损坏程度不尽相同的盔甲和工具丢进ME系统。
 只要耐久度或附魔不同，它们就会被分开存储，这会使得系统臃肿不堪。建议你在物品进入你的系统前将它们分离出来。 
@@ -61,10 +62,11 @@ navigation:
 | <ItemLink id="item_storage_cell_64k" />  |           520,192 |            266,240 |
 | <ItemLink id="item_storage_cell_256k" /> |         2,080,768 |          1,064,960 |
 
-> 译者注：每种类预先占用元件总字节数的1/128。
+- 译者注：每种类预先占用元件总字节数的1/128。
+- 此处内容来源于[nhdsd](https://github.com/nhdsd/AE2-Chinese-Guidebook)，由[NsATHUV](https://github.com/NsATHUV)修正。
 
 ![有1种类物品的元件](../assets/diagrams/1_type_cell.png)
 
 ![有63种类物品的元件](../assets/diagrams/63_type_cell.png)
 
-**A Cell With 1/63 Type(s) In Use: 使用了1/63种类数的元件; Upfront Type Cost: 种类预先占用量; Items: 物品使用量**
+- 汉化图来源于Github [Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/tree/main/projects/1.20/assets/applied-energistics-2/ae2/ae2guide/assets/diagrams)。
