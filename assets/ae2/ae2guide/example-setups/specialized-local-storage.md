@@ -1,71 +1,61 @@
 ---
 navigation:
   parent: example-setups/example-setups-index.md
-  title: Specialized Local Storage
+  title: 专用本地存储
   icon: drive
 ---
 
-# Specialized Local Storage
+# 专用本地存储
 
-Utilizing one of the [special behaviors of the Interface](../items-blocks-machines/interface.md#special-interactions), a
-[subnetwork](../ae2-mechanics/subnetworks.md) can present the contents of its storage to the main network, without being able
-to see the main network's storage, and taking up only 1 [channel](../ae2-mechanics/channels.md).
+利用[ME接口的特殊交互机制](../items-blocks-machines/interface.md#special-interactions)，通过[子网](../ae2-mechanics/subnetworks.md)可将本地存储内容呈现给主网络，同时仅占用1个[频道](../ae2-mechanics/channels.md)，且无法访问主网络存储。
 
-This is useful for local storage at some farm, so that the items will not overflow into your main storage.
+适用于农场等场景的本地存储，防止物品溢出至主存储。
 
 <GameScene zoom="6" interactive={true}>
   <ImportStructure src="../assets/assemblies/local_storage.snbt" />
 
 <BoxAnnotation color="#dddddd" min="4 0 0" max="5 2 1">
-        (1) Some method of importing items (in this case an interface)
+        (1) 物品输入方式（本例使用ME接口）
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3 0 0" max="4 1 1">
-        (2) Drive: Has some cells in it. The cells should be filtered to whatever the farm outputs.
-        The cells can have Equal Distribution Cards and Overflow Destruction Cards.
+        (2) ME驱动器：内置存储元件，元件需过滤农场产物。可安装均分卡和溢出销毁卡
         <Row><ItemImage id="item_storage_cell_4k" scale="2" /> <ItemImage id="equal_distribution_card" scale="2" /> <ItemImage id="void_card" scale="2" /></Row>
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3 1 0" max="4 2 0.3">
-        (3) Crafting Terminal: This can see the contents of the Drive on the subnet, but not the contents of your main network's storage.
+        (3) 合成终端：仅查看子网驱动器内容，无法访问主网络存储
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="2 0 0" max="2.3 1 1">
-        (4) Interface #2: In its default configuration.
+        (4) ME接口#2：保持默认配置
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1.7 0 0" max="2 1 1">
-        (5) Storage Bus: Has priority set higher than the main storage, can be filtered to whatever the farm outputs.
+        (5) 存储总线：优先级高于主存储，可过滤农场产物
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 1 0" max="2 2 0.3">
-        Crafting Terminal: This can see both the contents of the main network's storage *and* the subnetwork.
+        合成终端：可同时查看主网络存储和子网内容
   </BoxAnnotation>
 
 <DiamondAnnotation pos="0 0.5 0.5" color="#00ff00">
-        To Main Network
+        连接主网络
     </DiamondAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## Configurations
+## 配置说明
 
-* The first <ItemLink id="interface" /> (1) simply accepts items from whatever farm you have and pushes them into the subnet.
-* The <ItemLink id="drive" /> (2) has some [cells](../items-blocks-machines/storage_cells.md) in it. The cells should be
-  [partitioned](../items-blocks-machines/cell_workbench.md) to whatever the farm outputs.
-  The cells can have <ItemLink id="equal_distribution_card" />s and <ItemLink id="void_card" />s.
-* The second <ItemLink id="interface" /> (4) is in its default configuration.
-* The <ItemLink id="storage_bus" /> has its [priority](../ae2-mechanics/import-export-storage.md#storage-priority) set
-  higher than the main storage. It can be filtered to whatever the farm outputs.
+* ME接口#1 (1) 接收农场产物并推送至子网
+* ME驱动器 (2) 内置[存储元件](../items-blocks-machines/storage_cells.md)，元件需[分区](../items-blocks-machines/cell_workbench.md)过滤农场产物，可安装<ItemLink id="equal_distribution_card" />和<ItemLink id="void_card" />
+* ME接口#2 (4) 保持默认配置
+* 存储总线 (5) 设置[优先级](../ae2-mechanics/import-export-storage.md#storage-priority)高于主存储，可过滤特定产物
 
-## How It Works
+## 工作原理
 
-* The <ItemLink id="interface" /> on the subnet shows the <ItemLink id="storage_bus" /> on the main network the contents of
-the <ItemLink id="drive" />. This means the storage bus can directly pull items from and push items to the cells in the drive.
-* The storage bus is set to high [priority](../ae2-mechanics/import-export-storage.md#storage-priority) so that items are preferentially
-  put back in the subnet instead of in your main storage.
-* Importantly, if the cells in the subnet fill up, the items will not overflow into the main network. If the farm is of a type
-that breaks if it backs up, <ItemLink id="void_card" />s can be used to delete the excess items instead. 
-* If the farm outputs multiple items, <ItemLink id="equal_distribution_card" />s can stop one item from filling all the cells
-and not letting the other items be stored.
+* 子网ME接口向主网络存储总线暴露驱动器内容，实现直接存取
+* 存储总线高优先级确保产物优先存入子网
+* 子网存储满载时物品不会溢出至主网络，可安装<ItemLink id="void_card" />自动销毁过量物品
+* 多种产物共存时，<ItemLink id="equal_distribution_card" />可防止单一物品占满存储
