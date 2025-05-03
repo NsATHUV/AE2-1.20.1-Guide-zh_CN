@@ -4,7 +4,7 @@
 
 ## 特性
 - **基于深度调校的Deepseek-R1模型汉化**：汉化内容可能有误，若有疑问请提交[Issue](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/issues/new)。
-- **完全中文化**：所有指南内容均已翻译为简体中文。(待完成，目前汉化进度已在[release](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/releases/latest)里描述。)
+- **完全中文化**：所有指南内容均已翻译为简体中文。（除去包含内容的图片，汉化图片是项艰难的工作）
 - **资源包形式**：无需额外安装模组，无需对模组jar包进行任何修改，只需将资源包放入游戏目录即可使用。
 
 ## 使用方法
