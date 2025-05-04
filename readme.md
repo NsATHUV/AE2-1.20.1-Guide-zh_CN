@@ -16,13 +16,13 @@
 ## 适用版本（经测试的）
 - Minecraft 1.20.1
 - Forge 47.4.0
-- \[应用能源2\]appliedenergistics2-forge-15.3.4
+> \[应用能源2\]appliedenergistics2-forge-15.3.4 **以上**
 
 ## 注意事项
 - 本资源包仅适用于应用能源2模组的指南内容汉化，需确保已安装对应版本的应用能源2模组。
 - 如果在使用过程中发现翻译问题或其他问题，欢迎提交 [Issue](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/issues/new)。
 
 ## 版权声明
-本资源包遵循 [MIT 开源协议](https://opensource.org/licenses/MIT) 发布，可自由使用分发。与应用能源2官方以及任何汉化作者无关。应用能源2模组的版权归其原作者所有。
+本资源包遵循 [MIT 开源协议](https://opensource.org/licenses/MIT) 发布，可自由使用、分发。与应用能源2官方以及任何汉化作者无关。应用能源2模组的版权归其原作者所有。
 
 感谢您的使用，祝您游戏愉快！
