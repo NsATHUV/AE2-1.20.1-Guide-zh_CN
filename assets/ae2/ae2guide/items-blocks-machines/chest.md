@@ -16,13 +16,13 @@ item_ids:
 <ImportStructure src="../assets/blocks/chest.snbt" />
 </GameScene>
 
-ME箱子集成了<ItemLink id="terminal" />终端、<ItemLink id="drive" />驱动器和<ItemLink id="energy_acceptor" />能源接收器，相当于微型网络。由于仅支持单个[存储元件](../items-blocks-machines/storage_cells.md)，其独立存储能力有限。
+ME箱子集成了<ItemLink id="terminal" />、<ItemLink id="drive" />和<ItemLink id="energy_acceptor" />，相当于微型网络。由于仅支持单个[存储元件](../items-blocks-machines/storage_cells.md)，其独立存储能力有限。
 
 核心功能：通过内置终端直接管理插入的存储元件。主网络中的[设备](../ae2-mechanics/devices.md)可通过[网络存储](../ae2-mechanics/import-export-storage.md)访问ME箱子内容。
 
 ## 交互方式
 
-* **顶部界面**：打开集成终端（仅允许存入物品）
+* **顶部面**：打开集成终端（仅允许存入物品）
 * **其他面**：显示存储元件插槽和优先级设置（支持物流设备存取）
 * 使用<ItemLink id="certus_quartz_wrench" />调整设备朝向
 

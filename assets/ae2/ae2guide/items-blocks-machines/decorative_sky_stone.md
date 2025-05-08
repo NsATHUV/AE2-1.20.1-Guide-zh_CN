@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: 装饰性天空石方块
+  title: 装饰性陨石方块
   icon: sky_stone_stairs
   position: 010
 categories:
@@ -23,7 +23,7 @@ item_ids:
 - ae2:sky_stone_small_brick_slab
 ---
 
-# 装饰性天空石方块
+# 装饰性陨石方块
 
 <Row>
   <GameScene zoom="3" background="transparent">

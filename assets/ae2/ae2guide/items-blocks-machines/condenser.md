@@ -16,7 +16,7 @@ item_ids:
 
 物质聚合器具备双重功能：
 - 作为高效垃圾桶使用
-- 生产<ItemLink id="matter_ball" />（物质球）和[奇点](../items-blocks-machines/singularities.md)
+- 生产<ItemLink id="matter_ball" />和[奇点](../items-blocks-machines/singularities.md)
 支持处理所有可存入存储元件的物品/流体等
 
 ## 工作模式配置
