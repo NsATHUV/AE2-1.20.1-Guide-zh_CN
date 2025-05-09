@@ -1,4 +1,4 @@
-<img height="128" align="left" src="img/logo.png" alt="Logo">
+<img height="200" align="left" src="img/logo.png" alt="Logo">
 
 # AE2 1.20.1 Guide 中文汉化
 
