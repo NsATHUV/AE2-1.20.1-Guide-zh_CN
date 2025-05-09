@@ -1,3 +1,5 @@
+<img height="128" align="left" src="img/logo.png" alt="Logo">
+
 # AE2 1.20.1 Guide 中文汉化
 
 本仓库提供了适用于《我的世界》1.20.1版本的应用能源2 (Applied Energistics 2) 指南的中文汉化资源包。通过此资源包，玩家可以在游戏中以中文查看应用能源2的相关指南内容。
