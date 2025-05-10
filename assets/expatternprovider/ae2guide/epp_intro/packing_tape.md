@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: ME Packing Tape
+    title: ME封装胶带
     icon: expatternprovider:me_packing_tape
 categories:
 - extended items
@@ -10,37 +10,35 @@ item_ids:
 - expatternprovider:package
 ---
 
-# ME Packing Tape
+# ME封装胶带
 
-ME Packing Tape can pack in-world ME Device into a Packaged Device item
+可将世界中的ME设备封装为便携式物品的专用工具
 
 <Row>
 <ItemImage id="expatternprovider:me_packing_tape" scale="4"></ItemImage>
 <ItemImage id="expatternprovider:package" scale="4"></ItemImage>
 </Row>
 
-## Packing
+## 封装操作
 
-Sneak + Mouse Right Click on ME Device with the tape, and you can get a package item from it. All settings and inventory of
-the device will be kept. It can be very useful when you are moving your ME setup.
+潜行状态下使用胶带右键点击ME设备，可获得包含完整设备数据的<ItemLink id="expatternprovider:package" />。该操作将保留设备的所有配置参数与存储内容，便于AE系统迁移重组。
 
-Notice that ME Packing Tape only supports the devices on list, the device list is configurable.
+注意：仅支持封装列表内设备，可通过配置文件修改支持设备列表。
 
-### Default List
+### 默认支持设备
 
-|                                      Device                                       |                                 Name                                  |
-|:---------------------------------------------------------------------------------:|:---------------------------------------------------------------------:|
-|    <ItemImage id="expatternprovider:ex_interface_part" scale="3"></ItemImage>     |    <ItemLink id="expatternprovider:ex_interface_part"></ItemLink>     |
-| <ItemImage id="expatternprovider:ex_pattern_provider_part" scale="3"></ItemImage> | <ItemLink id="expatternprovider:ex_pattern_provider_part"></ItemLink> |
-|       <ItemImage id="expatternprovider:ex_interface" scale="3"></ItemImage>       |       <ItemLink id="expatternprovider:ex_interface"></ItemLink>       |
-|   <ItemImage id="expatternprovider:ex_pattern_provider" scale="3"></ItemImage>    |   <ItemLink id="expatternprovider:ex_pattern_provider"></ItemLink>    |
-|            <ItemImage id="ae2:cable_interface" scale="3"></ItemImage>             |            <ItemLink id="ae2:cable_interface"></ItemLink>             |
-|         <ItemImage id="ae2:cable_pattern_provider" scale="3"></ItemImage>         |         <ItemLink id="ae2:cable_pattern_provider"></ItemLink>         |
-|               <ItemImage id="ae2:interface" scale="3"></ItemImage>                |               <ItemLink id="ae2:interface"></ItemLink>                |
-|            <ItemImage id="ae2:pattern_provider" scale="3"></ItemImage>            |            <ItemLink id="ae2:pattern_provider"></ItemLink>            |
-|                 <ItemImage id="ae2:drive" scale="3"></ItemImage>                  |                 <ItemLink id="ae2:drive"></ItemLink>                  |
+|                                      设备图标                                      |                                  设备名称                                  |
+|:---------------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
+|    <ItemImage id="expatternprovider:ex_interface_part" scale="3"></ItemImage>     |    <ItemLink id="expatternprovider:ex_interface_part">ME扩展接口部件</ItemLink>     |
+| <ItemImage id="expatternprovider:ex_pattern_provider_part" scale="3"></ItemImage> | <ItemLink id="expatternprovider:ex_pattern_provider_part">ME扩展样板供应器部件</ItemLink> |
+|       <ItemImage id="expatternprovider:ex_interface" scale="3"></ItemImage>       |       <ItemLink id="expatternprovider:ex_interface">ME扩展接口</ItemLink>       |
+|   <ItemImage id="expatternprovider:ex_pattern_provider" scale="3"></ItemImage>    |   <ItemLink id="expatternprovider:ex_pattern_provider">ME扩展样板供应器</ItemLink>    |
+|            <ItemImage id="ae2:cable_interface" scale="3"></ItemImage>             |            <ItemLink id="ae2:cable_interface">ME接口线缆</ItemLink>             |
+|         <ItemImage id="ae2:cable_pattern_provider" scale="3"></ItemImage>         |         <ItemLink id="ae2:cable_pattern_provider">ME样板供应器线缆</ItemLink>         |
+|               <ItemImage id="ae2:interface" scale="3"></ItemImage>                |               <ItemLink id="ae2:interface">ME接口</ItemLink>                |
+|            <ItemImage id="ae2:pattern_provider" scale="3"></ItemImage>            |            <ItemLink id="ae2:pattern_provider">ME样板供应器</ItemLink>            |
+|                 <ItemImage id="ae2:drive" scale="3"></ItemImage>                  |                 <ItemLink id="ae2:drive">ME驱动器</ItemLink>                  |
 
-## Unpacking
+## 解封操作
 
-Just right mouse click with the package item as if it is the device block or part, then the packaged device will be recovered
-from the package.
+手持封装设备右键点击目标位置，即可按原设备参数恢复部署。操作方式与放置普通设备完全一致。

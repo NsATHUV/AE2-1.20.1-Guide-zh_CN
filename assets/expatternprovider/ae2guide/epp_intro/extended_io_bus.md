@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: ME Extended Export/Import Bus
+    title: ME扩展输入/输出总线
     icon: expatternprovider:ex_import_bus_part
 categories:
 - extended devices
@@ -10,7 +10,7 @@ item_ids:
 - expatternprovider:ex_export_bus_part
 ---
 
-# ME Extended Import/Export Bus
+# ME扩展输入/输出总线
 
 <Row gap="20">
 <GameScene zoom="8" background="transparent">
@@ -21,8 +21,6 @@ item_ids:
 </GameScene>
 </Row>
 
-ME Extended Import/Export Bus works faster than the normal <ItemLink id="ae2:import_bus" />/<ItemLink id="ae2:export_bus" />
-(Default speed multiplier is 8. It is configurable).
-
-They also have more upgrade slots compared with the normal ones.
-
+ME扩展输入/输出总线相比标准版<ItemLink id="ae2:import_bus" />/<ItemLink id="ae2:export_bus" />具有更高效能：
+- 默认速度倍率为8倍（可通过配置调整）
+- 配备更多升级卡槽

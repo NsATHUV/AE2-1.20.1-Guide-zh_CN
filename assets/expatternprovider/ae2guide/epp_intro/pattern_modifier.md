@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: Pattern Modifier
+    title: 样板修改器
     icon: expatternprovider:pattern_modifier
 categories:
 - extended items
@@ -9,58 +9,56 @@ item_ids:
 - expatternprovider:pattern_modifier
 ---
 
-# Pattern Modifier
+# 样板修改器
 
-Pattern Modifier is a tool for bulk pattern modification.
+批量修改AE2样板的专业工具
 
 <ItemImage id="expatternprovider:pattern_modifier" scale="4"></ItemImage>
 
-Right click it to open its GUI.
+右键点击开启操作界面
 
-## Multiply Mode
+## 乘数模式
 
-You can multiply/divide processing pattern's input and output amount by x by clicking the corresponding button. 
+通过点击对应按钮，可将样板输入输出量进行倍率调整：
 
 ![PM](../pic/pm.png)
 
-Origin Pattern:
+原始样板：
 
 ![PM1](../pic/pm1.png)
 
-After x10:
+10倍处理后：
 
 ![PM2](../pic/pm2.png)
 
-It also can clear all patterns contents and turn them into blank patterns by clicking the Clear button.
+点击"清除"按钮可将所有样板内容重置为空白状态
 
-### Notes:
+### 注意事项
 
- - The division button only works when its amount is divisible. For example ÷2 button won't work when pattern requires 3x
-cobblestones as input, because 3÷2 is 1.5.
+- 除法操作仅在数值可整除时生效（如输入量为3时无法执行÷2操作）
+- 单原料最大调整上限为999,999（通过乘法按钮无法突破此限制）
 
- - The multiplication button has a cap(999999). It can't make single ingredient's amount over this number.
+## 替换模式
 
-## Replace Mode
-
-Replace pattern's certain input and output ingredient with the other item.
+精准替换样板中的指定输入/输出原料：
 
 ![PM3](../pic/pm4.png)
 
-The slot A is what will be replaced and slot B is what the target will be replaced with.
+- 槽位A：待替换原料
+- 槽位B：替换目标原料
 
-For example, the following setting will replace the plank with coal.
+示例：将木板替换为煤炭
 
 ![PM4](../pic/pm6.png)
 
 ![PM5](../pic/pm5.png)
 
-Click the Replace button to perform the replacement.
+点击"替换"按钮执行操作：
 
 ![PM6](../pic/pm7.png)
 
-## Clone Mode
+## 复制模式
 
-You make copy any give pattern in this mode.
+完整克隆现有样板配置：
 
 ![PM7](../pic/pm3.png)
-

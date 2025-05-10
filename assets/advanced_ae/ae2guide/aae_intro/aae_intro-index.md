@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: 高级AE简介
+  title: 高级AE索引/目录
   position: 70
 ---
 

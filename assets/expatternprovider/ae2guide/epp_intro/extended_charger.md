@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: Extended Charger
+    title: 扩展充能器
     icon: expatternprovider:ex_charger
 categories:
 - extended devices
@@ -9,12 +9,12 @@ item_ids:
 - expatternprovider:ex_charger
 ---
 
-# Extended Charger
+# 扩展充能器
 
 <Row gap="20">
 <BlockImage id="expatternprovider:ex_charger" scale="8"></BlockImage>
 </Row>
 
-Extended Charger is an advanced <ItemLink id="ae2:charger" />.
+扩展充能器是<ItemLink id="ae2:charger" />的进阶版本。
 
-It can charge 4 items at the same time.
+可同时为4个物品进行充能操作。
