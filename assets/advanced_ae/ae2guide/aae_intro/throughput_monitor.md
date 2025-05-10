@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: aae_intro/aae_intro-index.md
-  title: ME Throughput Monitor
+  title: ME吞吐量监控器
   icon: advanced_ae:throughput_monitor
 categories:
   - advanced items
@@ -10,34 +10,31 @@ item_ids:
   - advanced_ae:throughput_monitor_configurator
 ---
 
-# ME Throughput Monitor
+# ME吞吐量监控器
 
 <GameScene zoom="8" background="transparent">
 <ImportStructure src="../structure/throughput_monitors.snbt"></ImportStructure>
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-Throughput Monitors are a subtype of monitor. They provide the same functionalities a <ItemLink id="ae2:storage_monitor" />
-does, with the addition of a throughput meter. I will keep track of a single item/fluid type and monitor changed to its
-quantity, displaying the amount per second to the user.
+吞吐量监控器是监控器的一个子类。它在具备<ItemLink id="ae2:storage_monitor" />所有功能的基础上，增加了吞吐量计量功能。可追踪指定物品/流体类型的数量变化，并向用户显示每秒的吞吐量数值。
 
-It does *not* require a channel.
+该设备*不需要*占用频道。
 
-## Keybinds
+## 操作方式
 
-*   Right-click with an item or double-right-click with a fluid container to set the monitor to that item/fluid.
-*   Right-click with an empty hand to clear the monitor.
-*   Shift-right-click with an empty hand to lock the monitor.
+* 手持物品右击 或 手持流体容器双击右击 —— 设定监控目标
+* 空手右击 —— 清空监控目标
+* 空手Shift+右击 —— 锁定当前监控目标
 
-## Throughput Monitor Configurator
+## 吞吐量监控配置器
 
 <ItemImage id="advanced_ae:throughput_monitor_configurator" scale="4"></ItemImage>
 
-The Throughput monitor configurator is a tool that can be used to change the presented data. Right-clicking a monitor
-with one in hand will cycle between three options:
+此工具用于切换监控数据显示模式。对监控器右击可循环切换三种模式：
 
-* Items per tick
-* Items per second
-* Items per minute
+* 物品每刻（20刻=1秒）
+* 物品每秒
+* 物品每分钟
 
-Note: It may take some time before the readings stabilize when changing the modes, so don't trust initial values!
+注意：模式切换后初始读数可能不稳定，请等待数值稳定后再参考！

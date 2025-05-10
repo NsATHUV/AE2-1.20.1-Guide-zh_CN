@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: aae_intro/aae_intro-index.md
-  title: Quantum Crafter
+  title: 量子合成器
   icon: advanced_ae:quantum_crafter
 categories:
   - advanced devices
@@ -9,47 +9,42 @@ item_ids:
   - advanced_ae:quantum_crafter
 ---
 
-# Quantum Crafter
+# 量子合成器
 
 <BlockImage id="advanced_ae:quantum_crafter" p:working="true" scale="4"></BlockImage>
 
-The Quantum Crafter is a powerful and configurable auto-crafter. With the entire inventory of the AE systems at its
-grasp, crafting non-stop becomes a trivial task. It is capable of running crafting jobs at a very fast pace while making
-sure you never run out of crucial resources. It is also capable of running fluid substitution crafts as well as
-recursive crafts, which have an input as an output.
+量子合成器是功能强大且可配置的自动合成设备。它能调用整个ME系统的存储资源，实现不间断的自动化合成任务。该设备能够以极快的速度执行合成流程，并确保关键资源永不枯竭。同时支持流体替换合成和递归合成（即输出物作为输入参与合成）。
 
-## Using the Crafter
+## 使用说明
 
-To make use of the Quantum Crafter, you need to place it into your network and connect it with a cable. A single channel
-is required for operation. Select which recipes you want to be run indefinitely and encode them in a crafting pattern.
-Those patterns can be inserted in the appropriate slots in the crafter.
+将量子合成器接入ME网络并连接线缆即可使用，需占用1个频道。选择需要持续运行的配方并编码为合成样板，将样板置入设备对应的槽位。
 
-![QCGUI](../pic/quantum_crafter_ui.png)
+![量子合成器界面](../pic/quantum_crafter_ui.png)
 
-Once inserted, there are two buttons that allow for configuration of each pattern. The square button on the bottom is
-responsible for enabling/disabling a pattern. Disabled patterns will never be crafted, but enabled patterns still follow
-a set of conditions. To set these conditions, you need to click the cog button to open the Pattern Configuration UI.
+插入样板后，可通过两个按钮进行配置：
+- 底部方形按钮：启用/停用该样板
+- 齿轮按钮：打开样板配置界面（即使样板已启用，仍需满足特定条件才会执行合成）
 
-![PCGUI](../pic/pattern_configuration_ui.png)
+![样板配置界面](../pic/pattern_configuration_ui.png)
 
-Inside the pattern configuration UI, all ingredients and the primary output are listed. You can use the number inputs to
-regulate how much of each ingredient you want to keep inside the ME system at all times, as well as set a maximum amount
-of the end product, to avoid over-crafting expensive items. After typing the desired number (which also accepts 
-mathematical expressions), you need to press enter to apply the input. An indication on the right will make it clear if
-values were applied or not. Particularly while configuring the output limit, if the value is set to 0 the limit is
-removed and the crafting will continue until inputs run out.
+在配置界面中：
+1. 列出所有原料和主产物
+2. 数字输入框可设置：
+   - 原料最低保有量（支持数学表达式如`3 * 4`）
+   - 产物最大合成量（输入0则取消限制）
+3. 右侧状态标识显示数值是否生效
 
-## Outputs
+## 输出配置
 
-The output of the crafts performed by the quantum crafter are highly configurable. The default configuration will try to
-push items directly from the output slots to the ME system. By left-clicking the cell button on the left toolbar, the
-output can be set to be pushed into adjacent inventories instead. This is further configurable by clicking the other
-button that appears when this setting is enabled, that allows for the selection of which sides will be considered
-enabled for auto-export. The combination of these two configurations should allow for plenty of control and creative
-choice on how the crafter is used.
+默认将产物直接注入ME系统，通过左侧工具栏的单元格按钮可切换为向相邻容器自动导出。启用导出功能后，可进一步配置允许导出的方向面。
 
-## Upgrades
+## 升级支持
 
-To unlock the full potential out of the Quantum Crafter, upgrade cards must be installed. It can receive
-<ItemLink id="ae2:speed_card" />s and <ItemLink id="ae2:redstone_card" />s. The former greatly accelerates the crafting
-speed, reaching 64 crafts of each pattern per tick while the latter allows for redstone control.
+安装升级卡可解锁完整功能：
+- <ItemLink id="ae2:speed_card" />：提升合成速度（最高每刻执行64次合成）
+- <ItemLink id="ae2:redstone_card" />：启用红石控制
+
+注意事项：
+- 递归合成时需注意逻辑闭环
+- 流体替换需在样板中启用对应选项
+- 建议搭配大容量能源元件使用
