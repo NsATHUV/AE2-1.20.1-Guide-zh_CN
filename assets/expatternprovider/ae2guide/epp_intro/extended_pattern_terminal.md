@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: ME Extended Pattern Access Terminal
+    title: ME扩展样板管理终端
     icon: expatternprovider:ex_pattern_access_part
 categories:
 - extended devices
@@ -10,9 +10,9 @@ item_ids:
 - expatternprovider:wireless_ex_pat
 ---
 
-# ME Extended Pattern Access Terminal
+# ME扩展样板管理终端
 
-ME Extended Pattern Access Terminal provides 3 extra additional features compared with <ItemLink id="ae2:pattern_access_terminal" />.
+相比<ItemLink id="ae2:pattern_access_terminal" />，本终端提供3项增强功能：
 
 <Row gap="20">
 <GameScene zoom="6" background="transparent">
@@ -22,23 +22,20 @@ ME Extended Pattern Access Terminal provides 3 extra additional features compare
 <ItemImage id="expatternprovider:wireless_ex_pat" scale="4"></ItemImage>
 </Row>
 
-## Better Pattern Search
+## 增强型样板搜索
 
-You can search pattern by input/output ingredients' name.
+支持通过输入/输出原料名称进行样板检索。
 
 ![EPA1](../pic/epa_gui1.png)
 
-## Pattern Highlight
+## 样板高亮系统
 
-Sometimes it is still hard to find the desired pattern because patterns are always displayed as a group. Now the Extended
-Pattern Access Terminal can highlight the matched pattern in GUI.
+当多个样板以组形式显示时，终端可自动高亮匹配项。
 
 ![EPA2](../pic/epa_gui2.png)
 
-## Pattern Provider In-World Highlight
+## 实体高亮定位
 
-It's annoying to find out which Pattern Provider is stuck when doing large crafting jobs. Extended Pattern Access Terminal
-can highlight the Pattern Provider in world, so you can locate it easily.
+大规模合成时快速定位问题样板供应器，终端可对世界中的目标设备进行实体高亮。
 
 ![EPA3](../pic/epa_gui3.png)
-

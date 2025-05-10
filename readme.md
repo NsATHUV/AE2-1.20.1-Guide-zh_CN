@@ -27,6 +27,12 @@
 - Forge 47.4.0
 > \[应用能源2\]appliedenergistics2-forge-15.3.4 **以上**
 
+> [!Tip]
+> 同时支持汉化以下附属/拓展模组
+> \[高级AE\]AdvancedAE 1.1.2  以上
+> \[AE2扩展\]ExtendedAE 1.4.1 以上
+> \[AE2 输入 输出 功能卡\]AE2 Import Export Card
+
 ## 注意事项
 - 本资源包仅适用于应用能源2模组的指南内容汉化，需确保已安装对应版本的应用能源2模组。
 - 如果在使用过程中发现翻译问题或其他问题，欢迎提交 [Issue](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/issues/new)。

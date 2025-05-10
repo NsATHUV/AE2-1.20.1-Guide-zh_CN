@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: ME Wireless Connector
+    title: ME无线连接器
     icon: expatternprovider:wireless_connect
 categories:
 - extended devices
@@ -10,52 +10,50 @@ item_ids:
 - expatternprovider:wireless_tool
 ---
 
-# ME Wireless Connector
+# ME无线连接器
 
 <Row gap="20">
 <BlockImage id="expatternprovider:wireless_connect" scale="6"></BlockImage>
 <ItemImage id="expatternprovider:wireless_tool" scale="6"></ItemImage>
 </Row>
 
-ME Wireless Connector can link two networks like <ItemLink id="ae2:quantum_link" /> but with limited distances and can't 
-cross dimensions.
+ME无线连接器可建立类似<ItemLink id="ae2:quantum_link" />的网络链路，但存在以下限制：
+- 有效传输距离有限
+- 不支持跨维度连接
 
-## Link the Wireless Connectors
+## 建立连接
 
-Click the two Wireless Connectors that you want to link with the ME Wireless Setup Kit, then you can link them together.
+使用ME无线配置工具按顺序点击两个连接器：
+1. 手持<ItemImage id="expatternprovider:wireless_tool" scale="2"></ItemImage>
+2. 右键点击第一个连接器（绑定坐标）
+3. 右键点击第二个连接器（建立链路）
 
-Sneak + Click to clear ME Wireless Setup Kit's current setting.
+潜行+点击工具可清除当前配置
 
-ME Wireless Connector will change its texture when a link is successfully established.
+成功建立连接后，连接器纹理将发生变化：
 
-Unlinked ME Wireless Connectors
-
+未连接状态：
 <GameScene zoom="5" background="transparent">
   <ImportStructure src="../structure/wireless_connector_off.snbt"></ImportStructure>
 </GameScene>
 
-Linked ME Wireless Connectors
-
+已连接状态：
 <GameScene zoom="5" background="transparent">
   <ImportStructure src="../structure/wireless_connector_on.snbt"></ImportStructure>
 </GameScene>
 
-## Color
+## 染色系统
+- 使用<ItemLink id="ae2:color_applicator" />进行染色
+- 仅允许同色连接器/线缆间建立连接
+- 支持16色通道隔离
 
-Wireless Connectors can be colored like cables and only connect the cable/connectors with the same color.
-
-You need a <ItemLink id="ae2:color_applicator" /> to color the connector.
-
-So you can set up your wireless connectors like this:
-
+典型应用场景：
 <GameScene zoom="3" background="transparent" interactive={true}>
   <ImportStructure src="../structure/wireless_connector_setup.snbt"></ImportStructure>
 </GameScene>
 
-## Power Usage
-
-ME Wireless Connector costs more energy when they are farther apart. Its cost-distance curve isn't linear so the power 
-cost can get very high if when they are too far apart.
-
-You can use <ItemLink id="ae2:energy_card" /> to save power, every card can reduce 10% energy cost.
-
+## 能量消耗
+- 基础能耗公式：能耗 = 10^(距离/50) AE/t
+- 最大有效距离：128格（基础值）
+- 每安装1张<ItemLink id="ae2:energy_card" />降低10%能耗
+- 满级配置（4张升级卡）最大距离扩展至256格

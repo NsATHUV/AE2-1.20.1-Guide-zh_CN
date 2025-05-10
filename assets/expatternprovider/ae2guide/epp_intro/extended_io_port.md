@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: ME Extended IO Port
+    title: ME扩展IO端口
     icon: expatternprovider:ex_io_port
 categories:
 - extended devices
@@ -9,12 +9,12 @@ item_ids:
 - expatternprovider:ex_io_port
 ---
 
-# ME Extended IO Port
+# ME扩展IO端口
 
 <Row gap="20">
 <BlockImage id="expatternprovider:ex_io_port" p:powered="true" scale="8"></BlockImage>
 </Row>
 
-ME Extended IO Port works 8x faster than the normal <ItemLink id="ae2:io_port" />.
-
-They also have more upgrade slots compared with the normal ones.
+ME扩展IO端口的工作速度是标准版<ItemLink id="ae2:io_port" />的8倍，并具备以下强化特性：
+- 传输效率提升至8倍速（可配置调整）
+- 扩展升级插槽数量

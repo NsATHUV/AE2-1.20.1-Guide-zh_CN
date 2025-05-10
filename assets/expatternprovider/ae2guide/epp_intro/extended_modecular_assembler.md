@@ -1,7 +1,7 @@
 ---
 navigation:
     parent: epp_intro/epp_intro-index.md
-    title: Extended Molecular Assembler
+    title: 扩展分子装配室
     icon: expatternprovider:ex_molecular_assembler
 categories:
 - extended devices
@@ -9,16 +9,15 @@ item_ids:
 - expatternprovider:ex_molecular_assembler
 ---
 
-# Extended Molecular Assembler
+# 扩展分子装配室
 
 <Row gap="20">
 <BlockImage id="expatternprovider:ex_molecular_assembler" scale="8"></BlockImage>
 </Row>
 
-Extended Molecular Assembler is an advanced <ItemLink id="ae2:molecular_assembler" />.
+扩展分子装配室是<ItemLink id="ae2:molecular_assembler" />的强化版本，具备以下特性：
 
-It can run 8 crafting jobs at the same time (of course you need <ItemLink id="ae2:crafting_accelerator" /> in your ME network at first)
-and 2x faster than the normal one.
+- 可并行处理8个合成任务（需确保ME网络中已安装<ItemLink id="ae2:crafting_accelerator" />）
+- 合成速度较原版提升2倍
 
-However, it only supports the crafting job from <ItemLink id="ae2:pattern_provider" />. So you can't put a pattern in it directly.
-
+注意：仅支持接收来自<ItemLink id="ae2:pattern_provider" />的合成指令，无法直接在本设备中置入样板。
