@@ -25,13 +25,13 @@
 ## 适用版本（经测试的）
 - Minecraft 1.20.1
 - Forge 47.4.0
-> \[应用能源2\]appliedenergistics2-forge-15.3.4 **以上**
+- \[应用能源2\]appliedenergistics2-forge-15.3.4 **以上**
 
 > [!Tip]
-> 同时支持汉化以下附属/拓展模组
-> \[高级AE\]AdvancedAE 1.1.2  以上
-> \[AE2扩展\]ExtendedAE 1.4.1 以上
-> \[AE2 输入 输出 功能卡\]AE2 Import Export Card
+> 同时支持汉化以下附属/拓展模组：
+> - \[高级AE\] AdvancedAE 1.1.2  以上
+> - \[AE2扩展\] ExtendedAE 1.4.1 以上
+> - \[AE2 输入 输出 功能卡\] AE2 Import Export Card
 
 ## 注意事项
 - 本资源包仅适用于应用能源2模组的指南内容汉化，需确保已安装对应版本的应用能源2模组。
