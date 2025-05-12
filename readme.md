@@ -32,8 +32,8 @@
 > [!Tip]
 > **注**：使用鼠标中键点击`链接`或`徽章`，可以在新窗口打开对应页面，这样就不会因为跳转链接而关闭这个文档页面了！
 1. 下载本仓库中的[资源包文件.zip](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/releases/latest)。
-     - ⭐️（强烈）[![Static Badge](https://img.shields.io/badge/Modrinth-AE2_Guide_zh__cn-%2300AF5C?logo=modrinth&style=flat-square)](https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn)  该资源包已上传至[Modrinth](https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn/version/latest)，蓝色文本下载最新版，或者点击徽章跳转至项目主页
-    
+     - [![Static Badge](https://img.shields.io/badge/Modrinth-AE2_Guide_zh__cn-%2300AF5C?logo=modrinth&style=flat-square)](https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn) 建议使用⭐️：该资源包已上传至[Modrinth](https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn/version/latest)
+     - 👆点击`徽章`或`蓝色文本`前往Modrinth项目页面👆
 
 2. 将资源包文件放入游戏目录下的 `resourcepacks` 文件夹中。
 3. 启动游戏并在资源包设置中启用该资源包。
