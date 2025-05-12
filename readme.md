@@ -1,8 +1,20 @@
 <img height="180" align="left" src="img/logo.png" alt="Logo">
 
-# AE2 1.20.1 Guide 中文汉化
+<h1 id="custom_h1" style="border-bottom:0px solid;">
+  <a href="https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn/version/latest" target="_blank">
+  AE2 1.20.1 Guide 中文汉化</a>
+</h1>
+   
+[![status](https://img.shields.io/badge/MC_Version-1.20.1-D87038?style=flat-square)](https://www.minecraft.net/zh-hans/download)
+[![Forge](https://img.shields.io/badge/Mod_Loader-Forge-%23DFA86A?logo=curseforge&logoColor=#F16436&style=flat-square)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
+[![status](https://img.shields.io/badge/Mod_Support-AE2_15.3.4+-00AF5C?logo=modrinth&style=flat-square)](https://modrinth.com/mod/ae2)
+[![status](https://img.shields.io/badge/Language-Zh__CN-red?style=flat-square)](https://www.wikiwand.com/zh-hans/articles/%E6%B1%89%E8%AF%AD)
+[![status](https://img.shields.io/badge/License-MIT-%233DA638?style=flat-square)](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN?tab=MIT-1-ov-file) 
+
+
 
 本仓库提供了适用于《我的世界》1.20.1版本的应用能源2 (Applied Energistics 2) 指南的中文汉化资源包。通过此资源包，玩家可以在游戏中以中文查看应用能源2的相关指南内容。
+
 
 ---
 ## 预览图
@@ -17,10 +29,15 @@
 - **资源包形式**：无需额外安装模组，无需对模组jar包进行任何修改，只需将资源包放入游戏目录即可使用。
 
 ## 使用方法
+> [!Tip]
+> **注**：使用鼠标中键点击`链接`或`徽章`，可以在新窗口打开对应页面，这样就不会因为跳转链接而关闭这个文档页面了！
 1. 下载本仓库中的[资源包文件.zip](https://github.com/NsATHUV/AE2-1.20.1-Guide-zh_CN/releases/latest)。
+     - ⭐️（强烈）[![Static Badge](https://img.shields.io/badge/Modrinth-AE2_Guide_zh__cn-%2300AF5C?logo=modrinth&style=flat-square)](https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn)  该资源包已上传至[Modrinth](https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn/version/latest)，蓝色文本下载最新版，或者点击徽章跳转至项目主页
+    
+
 2. 将资源包文件放入游戏目录下的 `resourcepacks` 文件夹中。
 3. 启动游戏并在资源包设置中启用该资源包。
-4. 进入游戏后即可查看中文应用能源2指南。
+4. 进入游戏后即可查看中文 `应用能源2` 的指南。
 
 ## 适用版本（经测试的）
 - Minecraft 1.20.1
