@@ -1,9 +1,9 @@
 <img height="160" align="left" src="img/logo.png" alt="Logo">
 
-<h1 id="custom_h1" style="border-bottom:0px solid;">
+<h3 id="custom_h1">
   <a href="https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn/version/latest" target="_blank">
   AE2 1.20.1 Guide 中文汉化</a>
-</h1>
+</h3>
    
 [![status](https://img.shields.io/badge/MC_Version-1.20.1-D87038?style=flat-square)](https://www.minecraft.net/zh-hans/download)
 [![Forge](https://img.shields.io/badge/Mod_Loader-Forge-%23DFA86A?logo=curseforge&logoColor=#F16436&style=flat-square)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
