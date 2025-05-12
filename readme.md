@@ -1,4 +1,4 @@
-<img height="180" align="left" src="img/logo.png" alt="Logo">
+<img height="160" align="left" src="img/logo.png" alt="Logo">
 
 <h1 id="custom_h1" style="border-bottom:0px solid;">
   <a href="https://modrinth.com/resourcepack/ae2-1.20.1-guide-zh_cn/version/latest" target="_blank">
