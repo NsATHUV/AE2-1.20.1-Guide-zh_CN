@@ -18,8 +18,8 @@
 
 ---
 ## 预览图
-![image](https://github.com/user-attachments/assets/c1c37b9d-fd00-4476-b9fc-5fdae6a99bf0)
-![image](https://github.com/user-attachments/assets/6091be62-47df-481f-b78f-31eb7985e2e7)
+![image](img/pre_view_1.png)
+![image](img/pre_view_2.png)
 
 
 
